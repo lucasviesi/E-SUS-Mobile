@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    tools:context="com.focus.activities.MenuPrincipal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:contentDescription="@string/descriLogo"
+            android:src="@drawable/cabecalho" />
+
+        <TextView
+            android:id="@+id/TV_MenuPrinc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="3.95"
+            android:background="@drawable/textview_menuprincipal"
+            android:gravity="center"
+            android:radius="10dp"
+            android:text="@string/menuPrincipal"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/TV_UsuLogado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/border"
+            android:text="@string/mpUsu"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/BtnListDomicilios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_azul_selector"
+                android:onClick="ListaDomicilios"
+                android:text="@string/mpListDom"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/Btn_Normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <Button
+                android:id="@+id/BtnVisitaDom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="4"
+                android:background="@drawable/btn_azul_selector"
+                android:onClick="FichaVisitaDomiciliarC"
+                android:text="@string/mpVisDom"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/Btn_Normal"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/BtnCadastroDomicilios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_azul_selector"
+                android:onClick="CadastroDomicilio"
+                android:text="@string/mpCadDom"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/Btn_Normal"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/BtnCadastroCidadao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_azul_selector"
+                android:onClick="CadastroCidadao"
+                android:text="@string/mpCadCid"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/Btn_Normal"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/BtnSair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_weight="14.20"
+            android:background="@drawable/btn_laranja_selector"
+            android:gravity="center"
+            android:onClick="sair"
+            android:text="@string/btnSair"
+            android:textSize="@dimen/Btn_Normal"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

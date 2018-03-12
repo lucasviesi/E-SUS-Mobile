@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Responsavel pela animação de seleção do DOMICILIOS NÃO VISITADOS -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:drawable="@drawable/item_list_selected" android:state_pressed="true"/>
+    
+    <!-- focused -->
+    <item android:drawable="@drawable/item_list_selected" android:state_focused="true"/>
+	        
+</selector>

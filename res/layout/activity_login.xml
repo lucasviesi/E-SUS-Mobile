@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.focus.activities.Login" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/TableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="334dp"
+            android:background="#ffffff"
+            android:stretchColumns="1"
+            tools:context="com.focus.activities.Login" >
+
+            <TableRow
+                android:id="@+id/tableRow_Cabecalho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/contD_LogoFocus"
+                    android:layout_span="2"
+                    android:src="@drawable/cabecalho" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow_Usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/usuario"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ED_Usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="20sp" >
+                    <requestFocus />
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/senha"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/ED_Senha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:inputType="textPassword"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+        
+        <Button
+            android:id="@+id/BtnEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_laranja_selector"
+            android:onClick="logar"
+            android:text="@string/btnEntrar"
+            android:textSize="@dimen/Btn_Normal"
+            android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/BtnSair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_laranja_selector"
+                android:onClick="sair"
+                android:text="@string/btnSair"
+                android:textSize="@dimen/Btn_Normal"
+                android:textStyle="bold" />
+        
+    </LinearLayout>
+
+</ScrollView>

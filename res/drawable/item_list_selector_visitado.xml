@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Responsavel pela animação de seleção dos domicilios visitados -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- pressed -->
+    <item android:drawable="@drawable/item_list_selected_visitado" android:state_pressed="true"/>
+    
+    <!-- focused -->
+    <item android:drawable="@drawable/item_list_selected_visitado" android:state_focused="true"/>
+	    
+    <!-- default -->
+    <item android:drawable="@drawable/item_list_visitado"/>
+            
+</selector>

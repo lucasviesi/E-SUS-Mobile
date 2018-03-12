@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LOGIN -->
+    <string name="descriLogo">Logo Focus</string>
+    <!-- LOGIN -->
+    
+	<!-- MENU PRINCIPAL -->
+	<string name="menuPrincipal">MENU PRINCIPAL</string>
+	<string name="mpUsu">Usuário:</string>
+	<string name="mpListDom">Listar Domicílios</string>
+	<string name="mpCadDom">Cadastrar Domicílio</string>
+	<string name="mpCadCid">Cadastrar Cidadão</string>
+	<string name="mpVisDom">Visita Domiciliar</string>
+	<!-- MENU PRINCIPAL -->
+		    
+    <string name="app_name">Focus E-SUS</string>
+    <string name="action_settings">Opções</string>
+    <string name="action_sair">Sair</string>
+    <string name="title_activity_menu_principal">Menu Principal</string>
+    <string name="title_activity_lista_domicilios">Lista Domicílios</string>
+    <string name="title_activity_cadastro_domicilio">Cadastro de Domicílio</string>
+    <string name="title_activity_cadastro_cidadao">Cadastro de Cidadão</string>
+    <string name="title_activity_ficha_visita_domiciliar_c">Cadastro E-SUS CDS Ficha de Visita Domiciliar e Territorial</string>
+    <string name="altHora">Alterar Hora</string>
+    
+    <string name="titleFichaVisitaDom">ESUS - Ficha Visita Domiciliar e Territorial</string>
+    <string name="btnCancelar">Cancelar</string>
+	<string name="btnSalvar">Salvar</string>
+	<string name="btnSair">Sair</string>
+	<string name="btnEntrar">Entrar</string>
+	<string name="senha">Senha </string>
+	<string name="usuario">Usuário </string>	
+	
+	<string name="infoProf">Informações do Profissional</string>
+	<string name="nome">Nome</string>
+	<string name="EquipProf">Nome Equipe *</string>
+	<string name="CNS">Número CNS *</string>
+	<string name="CPF">CPF *</string>
+	<string name="CBO">CBO *</string>
+	<string name="CNES">Cód. CNES Unidade *</string>
+	<string name="INE">Cód. Equipe (INE) *</string>
+	<string name="dtVisita">Data Visita *</string>
+	<string name="hrVisita">Hora Visita *</string>
+	
+	<string name="infoPac">Informações do Paciente</string>
+	<string name="pront">Prontuario</string>
+	<string name="cnsPac">Número CNS</string>
+	<string name="dtNascPac">Data de Nascimento **</string>
+	<string name="RGpac">RG</string>
+	<string name="CPFpac">CPF</string>
+	
+	<string name="sexo">Sexo **</string>
+	<string name="masc">Masculino</string>
+	<string name="fem">Feminino</string>
+	
+	<string name="visitaCompOutroProf">Visita compartilhada com outro profissional</string>	
+	<string name="infoVisita">Informações da Visita</string>
+	<string name="turno">Turno *</string>
+	<string name="manha">Manhã</string>
+	<string name="tarde">Tarde</string>
+	<string name="noite">Noite</string>
+	
+	<string name="motivoVisita">Motivo da Visita *</string>
+	<string name="cadAtualiza">Cadastramento / Atualização</string>
+	<string name="visitaPeriodica">Visita Periódica</string>
+	<string name="egressoInter">Egresso de Internação</string>
+	<string name="conviteAtivCole">Convite para atividades coletivas / campanha de saúde</string>
+	<string name="oriPrev">Orientação / Prevenção</string>
+	<string name="outros">Outros</string>
+	
+	<string name="buscaAtiva">Busca Ativa</string>
+	<string name="consulta">Consulta</string>
+	<string name="vacina">Vacina</string>
+	<string name="exame">Exame</string>
+	
+	<string name="acompanhamento">Acompanhamento</string>
+	<string name="gestante">Gestante</string>
+	<string name="puerpera">Puérpera</string>
+	<string name="recemNascido">Recém-nascido</string>
+	<string name="crianca">Criança</string>
+	<string name="pesDesnutricao">Pessoa com desnutrição</string>
+	<string name="pesReabiliDefi">Pessoa em reabilitação ou com deficiência</string>
+	<string name="pesHipertensao">Pessoa com hipertensão</string>
+	<string name="pesDiabetes">Pessoa com diabetes</string>
+	<string name="pesAsma">Pessoa com asma</string>
+	<string name="pesDPOC">Pessoa com DPOC / enfisema</string>
+	<string name="pesCancer">Pessoa com câncer</string>
+	<string name="pesOutrasDoeCronicas">Pessoa com outras doenças crônicas</string>
+	<string name="pesHanseniase">Pessoa com hanseníase</string>
+	<string name="pesTubercolose">Pessoa com tuberculose</string>
+	<string name="sintResp">Sintomáticos respiratórios</string>
+	<string name="tabagista">Tabagista</string>
+	<string name="domiAcamado">Domiciliados / Acamados</string>
+	<string name="condVulnSocial">Condições de vulnerabilidade social</string>
+	<string name="condBolsaFam">Condicionalidades do Bolsa Família</string>
+	<string name="saudeMental">Saúde mental</string>
+	<string name="usuAlcool">Usuário de álcool</string>
+	<string name="usuDrogas">Usuário de outras drogas</string>
+	
+	<string name="ctrlAmbVet">Controle ambiental / vetorial</string>
+	<string name="acaoEduca">Ação educativa</string>
+	<string name="imovelFoco">Imóvel com foco</string>
+	<string name="acaoMecanica">Ação mecânica</string>	
+	<string name="trataFocal">Tratamento focal</string>
+	
+	<string name="antropometria">Antropometria</string>
+	<string name="peso">Peso (Kg)</string>
+	<string name="altura">Altura (cm)</string>
+	<string name="hintPeso">0,000</string>
+	<string name="hintAltura">0,0</string>	
+	
+	<string name="desfecho">Desfecho *</string>
+	<string name="ausente">Ausente</string>
+	<string name="visitaRecusada">Visita Recusada</string>
+	<string name="visitaRealizada">Visita Realizada</string>
+	
+	<string name="infoCampo1">* Campo obrigatório</string>
+	<string name="infoCampo2">** Campos obrigatórios para visitas ao cidadão ou sua família</string>
+	<string name="infoCampo2CadCid">** Campo obrigatório condicionado à pergunta anterior </string>
+	<string name="infoCampo2CadDom">** Campo com obrigatoriedade condicional </string>
+	
+	<string name="listDom">Lista de Domicílios</string>
+	<string name="infoListaDom">TOQUE e SEGURE sobre um domicílio para abrir o questionário de Visita Domiciliar</string>
+	<string name="obsListaDom">OBS: Domicílios em Verde já possuem Ficha(s) Lançada(s)</string>
+	<string name="btnVoltarMenu">Voltar ao Menu</string>
+	<string name="contD_LogoFocus">Logo Focus</string>
+	<string name="CodArea">Código Área *</string>
+	<string name="DescriArea">Descrição Área *</string>	
+	<string name="NumMicroArea">Número Microárea *</string>
+	<string name="DescriMicroArea">Descrição Microárea *</string>	
+	<string name="microareaFA">FA (Fora de Área)</string>	
+	<string name="tipoImovel">Tipo de Imóvel *</string>
+	
+	<string name="aba_identCid">Identificação do Cidadão</string>
+	<string name="aba_infoSocioDem">Info. Socio- demográficas</string>
+	<string name="aba_condSaudeGeral">Situações Saúde Gerais</string>
+	<string name="aba_CidSitRua">Cidadão de Rua</string>	
+	
+	<string name="identCid">Identificação do Cidadão</string>
+	<string name="infoSocioDem">Informações Sociodemográficas</string>
+	<string name="condSaudeGeral">Condições/Situações de Saúde Gerais</string>
+	<string name="CidSitRua">Cidadão em Situação de Rua</string>	
+	
+	<string name="aba_endPermanencia">Endereço de Permanência</string>
+	<string name="aba_condMoradia">Condições de Moradia</string>
+	<string name="aba_FamiliasDom">Famílias</string>
+	<string name="aba_InstPermanencia">Instituição de Permanência</string>
+	
+	<string name="endPermanencia">Endereço/Local de Permanência</string>
+	<string name="condMoradia">Condições de Moradia</string>
+	<string name="FamiliasDom">Famílias</string>
+	<string name="InstPermanencia">Instituição de Permanência</string>
+	
+	<string name="teste">teste</string>
+	
+	<string name="CEP">CEP *</string>
+	<string name="Municipio">Município *</string>
+	<string name="UF">UF *</string>
+	<string name="Bairro">Bairro *</string>
+	<string name="TpLogradouro">Tipo Logradouro *</string>
+	<string name="NomeLogradouro">Nome Logradouro *</string>
+	<string name="Numero">Número *</string>
+	<string name="Complemento">Complemento </string>
+	<string name="PtoRef">Pto. Referência </string>
+	
+	<string name="RespFam">Responsável Familiar </string>
+	<string name="CnsResp">CNS do Responsável Familiar </string>
+	<string name="NomeComp">Nome Completo *</string>
+	<string name="NomeSocial">Nome Social </string>
+	<string name="dtNasc">Data Nascimento* </string>
+	<string name="SexoCid">Sexo* </string>
+	<string name="RacaCor">Raça Cor* </string>
+	<string name="Etnia">Etnia** </string>
+	<string name="Nis">Nº NIS (PIS/PASEP) </string>
+	<string name="NomeMae">Nome da Mãe </string>
+	<string name="NomePai">Nome do Pai </string>
+	<string name="Nacionalidade">Nacionalidade* </string>
+	<string name="PaisNasc">País de Nascimento** </string>
+	<string name="DtNaturalizacao">Data de Naturalização** </string>
+	<string name="PortNaturalizacao">Portaria Naturalização** </string>
+	<string name="MunUFNasc">Município e UF de Nascimento** </string>
+	<string name="DtEntBr">Data Entrada no Brasil** </string>
+	<string name="Celular">Telefone Celular </string>
+	<string name="Email">E-Mail </string>
+	
+	<string-array name="tipoImovel">
+	    <item>Selecione</item>
+    	<item>01 - Domicílio</item>
+	    <item>02 - Comércio</item>
+    	<item>03 - Terreno Baldio</item>
+	    <item>04 - Ponto Estratégico (cemitério, borracharia, ferro-velho, depósito de sucata ou materiais de construção, garagem de onibus ou veículo de grande porte)</item>
+	    <item>05 - Escola</item>
+	    <item>06 - Creche</item>
+	    <item>07 - Abrigo</item>
+		<item>08 - Instituição de longa permanência para idosos</item>
+		<item>09 - Unidade prisional</item>
+		<item>10 - Unidade de medida socioeducativa</item>
+		<item>11 - Delegacia</item>
+		<item>12 - Estabelecimento religioso</item>
+		<item>99 - Outros</item>
+  	</string-array>
+  	
+	<string name="sinalMais">+</string>
+	<string name="pacsDom">Pacientes do Domicílio</string>
+	<string name="btnFechar">Fechar</string>
+	
+</resources>

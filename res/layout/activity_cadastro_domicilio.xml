@@ -1,0 +1,446 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.focus.activities.CadastroDomicilio" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.31" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                    <ScrollView
+                        android:id="@+id/scroll_Aba1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin" >
+			            <!-- INICIO do Endereço/Local de Permanência -->
+			            <LinearLayout
+							android:id="@+id/ll_EnderecoPermanencia"                	
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_marginBottom="25dp"
+			                android:background="@drawable/selector_fieldset_background"
+			                android:orientation="vertical"
+			                android:paddingBottom="@dimen/GroupMarginVertical"
+			                android:paddingLeft="@dimen/activity_horizontal_margin"
+			                android:paddingRight="@dimen/activity_horizontal_margin"
+			                android:paddingTop="@dimen/GroupMarginVertical" >
+			
+			                <TextView
+						        android:id="@+id/TV_TituloAba1"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:layout_marginTop="5dp"
+						        android:layout_marginBottom="20dp"
+						        android:background="@drawable/textview_border"
+						        android:gravity="center"
+						        android:radius="5dp"
+						        android:text="@string/endPermanencia"
+						        android:textColor="@color/white"
+						        android:textSize="@dimen/FVD_Titulo" />
+			
+			                <TextView
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/CEP"
+			                    android:textSize="@dimen/FVD_Normal" />
+			
+			                <EditText
+			                    android:id="@+id/ED_Cep"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="number" 
+			                    android:maxLength="8"/>
+			
+			                <TextView
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/Municipio"
+			                    android:textSize="@dimen/FVD_Normal" />
+			
+			                <EditText
+			                    android:id="@+id/ED_Municipio"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="text" />
+			
+			                <TextView
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/UF"
+			                    android:textSize="@dimen/FVD_Normal" />
+			
+			                <EditText
+			                    android:id="@+id/ED_UF"
+			                    android:layout_width="70dp"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="text" 
+			                    android:maxLength="2" />
+			
+			                <TextView
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/Bairro"
+			                    android:textSize="@dimen/FVD_Normal" />
+			
+			                <EditText
+			                    android:id="@+id/ED_Bairro"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="text" />
+			
+			                <TextView
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/TpLogradouro"
+			                    android:textSize="@dimen/FVD_Normal" />
+			
+			                <EditText
+			                    android:id="@+id/ED_TpLogradouro"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="text" />
+			
+			                <TextView
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/NomeLogradouro"
+			                    android:textSize="@dimen/FVD_Normal" />
+			
+			                <EditText
+			                    android:id="@+id/ed_NomeLogradouro"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="none" />
+			                
+			                <TextView
+			                    android:layout_width="70dp"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/Numero"
+			                    android:textSize="@dimen/FVD_Normal" />
+			
+			                <EditText
+			                    android:id="@+id/ed_Numero"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="none" />
+			                
+			                <TextView
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/Complemento"
+			                    android:textSize="@dimen/FVD_Normal" />
+			
+			                <EditText
+			                    android:id="@+id/ed_Complemento"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="none" />
+			                
+			                <TextView
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content"
+			                    android:text="@string/PtoRef"
+			                    android:textSize="@dimen/FVD_Normal" />
+			
+			                <EditText
+			                    android:id="@+id/ed_ptoReferencia"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="none" />
+			                
+			                <TextView
+	                            android:id="@+id/tv_CodMicroArea"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/NumMicroArea"
+	                            android:textSize="@dimen/FVD_Normal" />
+	
+	                        <EditText
+	                            android:id="@+id/ed_NumMicroArea"
+	                            android:layout_width="70dp"
+	                            android:layout_height="match_parent"
+	                            android:inputType="number"
+	                            android:gravity="center"
+	                            android:textSize="@dimen/FVD_Minusculo1"
+	                            android:layout_marginBottom="40dp"
+	                            android:maxLength="2" />
+	                        
+	                        <TextView
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:text="@string/infoCampo1"/>
+		                
+		                	<TextView
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:text="@string/infoCampo2CadDom" />		
+			            </LinearLayout>
+			            <!-- FIM Endereço/Local de Permanência -->
+				    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:orientation="horizontal" >
+                    <ScrollView
+                        android:id="@+id/scroll_Aba2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin" >
+			            <!-- INICIO Condicoes Moradia  -->
+			            <LinearLayout
+							android:id="@+id/ll_CondMoradia"                	
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_marginBottom="25dp"
+			                android:background="@drawable/selector_fieldset_background"
+			                android:orientation="vertical"
+			                android:paddingBottom="@dimen/GroupMarginVertical"
+			                android:paddingLeft="@dimen/activity_horizontal_margin"
+			                android:paddingRight="@dimen/activity_horizontal_margin"
+			                android:paddingTop="@dimen/GroupMarginVertical" >
+			
+			                <TextView
+						        android:id="@+id/TV_TituloAba2"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:layout_marginTop="5dp"
+						        android:layout_marginBottom="20dp"
+						        android:background="@drawable/textview_border"
+						        android:gravity="center"
+						        android:radius="5dp"
+						        android:text="@string/condMoradia"
+						        android:textColor="@color/white"
+						        android:textSize="@dimen/FVD_Titulo" />
+			                
+			                <ProgressBar
+			                    android:id="@+id/PB_aba2"
+			                    style="?android:attr/progressBarStyleLarge"
+			                    android:layout_marginBottom="20dp"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="match_parent" />
+			                
+			                <TextView
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:text="@string/infoCampo1"/>
+		                
+		                	<TextView
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:text="@string/infoCampo2CadDom" />	
+			            </LinearLayout>
+			            <!-- FIM Condicoes Moradia -->
+				    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+					<ScrollView
+                        android:id="@+id/scroll_Aba3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin" >
+			            <!-- INICIO Familias  -->
+			            <LinearLayout
+							android:id="@+id/ll_Familias"                	
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_marginBottom="25dp"
+			                android:background="@drawable/selector_fieldset_background"
+			                android:orientation="vertical"
+			                android:paddingBottom="@dimen/GroupMarginVertical"
+			                android:paddingLeft="@dimen/activity_horizontal_margin"
+			                android:paddingRight="@dimen/activity_horizontal_margin"
+			                android:paddingTop="@dimen/GroupMarginVertical" >
+			
+			                <TextView
+						        android:id="@+id/TV_TituloAba3"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:layout_marginTop="5dp"
+						        android:layout_marginBottom="20dp"
+						        android:background="@drawable/textview_border"
+						        android:gravity="center"
+						        android:radius="5dp"
+						        android:text="@string/FamiliasDom"
+						        android:textColor="@color/white"
+						        android:textSize="@dimen/FVD_Titulo" />
+			                
+			                <ProgressBar
+			                    android:id="@+id/PB_aba3"
+			                    style="?android:attr/progressBarStyleLarge"
+			                    android:layout_marginBottom="20dp"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="match_parent" />
+			                
+			                <TextView
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:text="@string/infoCampo1"/>
+		                
+		                	<TextView
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:text="@string/infoCampo2CadDom" />
+			            </LinearLayout>
+			            <!-- FIM Familias -->
+				    </ScrollView>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                    <ScrollView
+                        android:id="@+id/scroll_Aba4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin" >
+			            <!-- INICIO Instituição de Permanência -->
+			            <LinearLayout
+							android:id="@+id/ll_InstPermanencia"                	
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_marginBottom="25dp"
+			                android:background="@drawable/selector_fieldset_background"
+			                android:orientation="vertical"
+			                android:paddingBottom="@dimen/GroupMarginVertical"
+			                android:paddingLeft="@dimen/activity_horizontal_margin"
+			                android:paddingRight="@dimen/activity_horizontal_margin"
+			                android:paddingTop="@dimen/GroupMarginVertical" >
+			
+			                <TextView
+						        android:id="@+id/TV_TituloAba4"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:layout_marginTop="5dp"
+						        android:layout_marginBottom="20dp"
+						        android:background="@drawable/textview_border"
+						        android:gravity="center"
+						        android:radius="5dp"
+						        android:text="@string/InstPermanencia"
+						        android:textColor="@color/white"
+						        android:textSize="@dimen/FVD_Titulo" />
+			                
+			                <ProgressBar
+			                    android:id="@+id/PB_aba4"
+			                    style="?android:attr/progressBarStyleLarge"
+			                    android:layout_marginBottom="20dp"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="match_parent" />
+			                
+			                <TextView
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:text="@string/infoCampo1"/>
+		                
+		                	<TextView
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:text="@string/infoCampo2CadDom" />
+			            </LinearLayout>
+			            <!-- FIM Instituição de Permanência -->
+				    </ScrollView>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    <Button
+        android:id="@+id/BtnSalvarCadDom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_laranja_selector"
+        android:onClick="Salvar"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/btnSalvar"
+        android:textColor="#000000"
+        android:textSize="@dimen/Btn_Normal"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/BtnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_laranja_selector"
+        android:onClick="voltarMenu"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/btnVoltarMenu"
+        android:textColor="#000000"
+        android:textSize="@dimen/Btn_Normal"
+        android:textStyle="bold" />
+</LinearLayout>

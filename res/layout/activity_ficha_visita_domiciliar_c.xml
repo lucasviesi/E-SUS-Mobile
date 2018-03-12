@@ -1,0 +1,1167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.focus.activities.FichaVisitaDomiciliarC" >
+
+    <TextView
+        android:id="@+id/TV_Cabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="@string/titleFichaVisitaDom"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/FVD_Titulo" />
+
+    <ScrollView
+		android:id="@+id/scroll_master"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <!-- LinearLayout Pai de Todos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollY="00dp" >
+
+            <!-- COMEÇO do Info Profissional -->
+            <LinearLayout
+                android:id="@+id/ll_infoProf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/selector_fieldset_background"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/GroupMarginVertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/GroupMarginVertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/infoProf"
+                    android:textSize="@dimen/FVD_SubTitulo"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nome"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_Nome_Prof"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:textSize="@dimen/FVD_Normal" >
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CNS"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_CNS_Prof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CPF"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_CPF_Prof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CBO"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_CBO_Prof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CNES"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_Cod_CNES_Uni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/INE"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_CodEquipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text"
+					android:textSize="@dimen/FVD_Normal" />
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/EquipProf"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_NomeEquipeProf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textSize="@dimen/FVD_Normal" />                  
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dtVisita"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_DataVisita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hrVisita"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/ED_HoraVisita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:inputType="text" />
+
+                    <Button
+                        android:id="@+id/btn_TrocaHora"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/altHora" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- FIM do Info Profissional -->
+
+            <!-- COMEÇO Tipo de Imovel -->
+            <LinearLayout
+                android:id="@+id/ll_TipoImovel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/selector_fieldset_background"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/GroupMarginVertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/GroupMarginVertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/tipoImovel"
+                    android:textSize="@dimen/FVD_SubTitulo"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Spinner
+                        android:id="@+id/spinner_TipoImovel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+			</LinearLayout>
+			<!-- FIM Tipo de Imovel -->
+
+            <!-- INICIO do Info Paciente -->
+            <LinearLayout
+				android:id="@+id/ll_infoPac"                	
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/selector_fieldset_background"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/GroupMarginVertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/GroupMarginVertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/infoPac"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nome"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <Spinner
+                    android:id="@+id/Spinner_PacNome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pront"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_NumProntuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cnsPac"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_CNSPac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dtNascPac"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_DtNascPac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/RGpac"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_RGPac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CPFpac"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ED_CPFPac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sexo"
+                    android:textSize="@dimen/FVD_Normal" />
+
+                <EditText
+                    android:id="@+id/ed_SexoPac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:focusable="false"
+                    android:inputType="none" />
+            </LinearLayout>
+            <!-- FIM Info Paciente -->
+
+            <!-- INICIO Info da Visita -->
+            <LinearLayout
+                android:id="@+id/ll_infoVisita"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/selector_fieldset_background"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/GroupMarginVertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/GroupMarginVertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/infoVisita"
+                    android:textSize="@dimen/FVD_SubTitulo"
+                    android:textStyle="bold" />
+                                
+                <!-- COMEÇO Area/Microarea -->
+                <LinearLayout
+                    android:id="@+id/ll_AreaMicro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/selector_fieldset_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/GroupMarginVertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/GroupMarginVertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_CodArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/CodArea"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <EditText
+                            android:id="@+id/ed_CodArea"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:gravity="center"
+                            android:textSize="@dimen/FVD_Minusculo1"
+                            android:focusable="false" >
+                        </EditText>
+                        
+                        <TextView
+                            android:id="@+id/tv_DescriArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/DescriArea"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <EditText
+                            android:id="@+id/ed_DescriArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:textSize="@dimen/FVD_Minusculo1"
+                            android:focusable="false" >
+                        </EditText>                        
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_CodMicroArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/NumMicroArea"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <EditText
+                            android:id="@+id/ed_NumMicroArea"
+                            android:layout_width="70dp"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:gravity="center"
+                            android:textSize="@dimen/FVD_Minusculo1"
+                            android:focusable="false" >
+                        </EditText>
+                        
+                        <TextView
+                            android:id="@+id/tv_DescriMicroArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/DescriMicroArea"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <EditText
+                            android:id="@+id/ed_DescriMicroArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:textSize="@dimen/FVD_Minusculo1"
+                            android:focusable="false" >
+                        </EditText>                        
+                    </LinearLayout>
+                    
+                    <CheckBox
+                        android:id="@+id/CB_MicroA_FA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/microareaFA"
+                        android:textSize="@dimen/FVD_Normal"
+                        android:onClick="foraArea" />                    
+                </LinearLayout>
+                <!-- FIM Area/Microarea -->
+                
+				<!-- COMEÇO Visita Compartilhada... -->
+				<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/selector_fieldset_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/GroupMarginVertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/GroupMarginVertical" >
+				    <CheckBox
+                    	android:id="@+id/CB_VisitaCompartilhada"
+                    	android:layout_width="match_parent"
+                    	android:layout_height="wrap_content"
+                    	android:ems="10"
+                    	android:text="@string/visitaCompOutroProf"
+                    	android:textSize="@dimen/FVD_Normal" />				    
+                </LinearLayout>
+				<!-- FIM Visita Compartilhada... -->
+                
+				<!-- COMEÇO TURNO -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/selector_fieldset_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/GroupMarginVertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/GroupMarginVertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/turno"
+                        android:textSize="@dimen/FVD_Normal" />
+
+                    <RadioGroup
+                        android:id="@+id/gbTurno"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rbTurno01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/manha"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <RadioButton
+                            android:id="@+id/rbTurno02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tarde"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <RadioButton
+                            android:id="@+id/rbTurno03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/noite"
+                            android:textSize="@dimen/FVD_Normal" />
+                    </RadioGroup>
+                </LinearLayout>
+                <!-- FIM TURNO -->
+                
+                <!-- INICIO Motivo da Visita -->
+                <LinearLayout
+                    android:id="@+id/gb_MotivoVisita"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="25dp"
+                    android:background="@drawable/selector_fieldset_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/GroupMarginVertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/GroupMarginVertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/motivoVisita"
+                        android:textSize="@dimen/FVD_SubTitulo"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/CB_MV_CadAtualiza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                        android:tag="cbMV01"
+                        android:text="@string/cadAtualiza"
+                        android:textSize="@dimen/FVD_Normal" />
+
+                    <CheckBox
+                        android:id="@+id/CB_MV_VisitaPeriodica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                        android:tag="cbMV02"
+                        android:text="@string/visitaPeriodica"
+                        android:textSize="@dimen/FVD_Normal" />
+
+                    <!-- COMEÇO Busca Ativa -->
+                    <LinearLayout
+                        android:id="@+id/ll_BuscaAtiva"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/selector_fieldset_background"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/GroupMarginVertical"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/GroupMarginVertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/buscaAtiva"
+                            android:textSize="@dimen/FVD_SubTitulo"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/CB_BA_Consulta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV03"
+                            android:text="@string/consulta"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_BA_Exame"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV04"
+                            android:text="@string/exame"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_BA_Vacina"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV05"
+                            android:text="@string/vacina"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_BA_CondiBolsa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="cbMV06"
+                            android:text="@string/condBolsaFam"
+                            android:textSize="@dimen/FVD_Normal" />
+                        <!-- FIM Busca Ativa -->
+                    </LinearLayout>
+
+                    <!-- COMEÇO Acompanhamento -->
+                    <LinearLayout
+                        android:id="@+id/ll_Acompanhamento"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/selector_fieldset_background"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/GroupMarginVertical"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/GroupMarginVertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/acompanhamento"
+                            android:textSize="@dimen/FVD_SubTitulo"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_Gestante"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:ems="10"
+                            android:tag="cbMV07"
+                            android:text="@string/gestante"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_Puerpera"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:ems="10"
+                            android:tag="cbMV08"
+                            android:text="@string/puerpera"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_RecemNasc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV09"
+                            android:text="@string/recemNascido"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_Crianca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV10"
+                            android:text="@string/crianca"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PDesnutricao"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV11"
+                            android:text="@string/pesDesnutricao"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PReabiliDefi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV12"
+                            android:text="@string/pesReabiliDefi"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PHipertensao"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV13"
+                            android:text="@string/pesHipertensao"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PDiabetes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV14"
+                            android:text="@string/pesDiabetes"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PAsma"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV15"
+                            android:text="@string/pesAsma"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PDPOC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV16"
+                            android:text="@string/pesDPOC"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PCancer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV17"
+                            android:text="@string/pesCancer"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_POutrasDoencas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV18"
+                            android:text="@string/pesOutrasDoeCronicas"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PHanseniase"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV19"
+                            android:text="@string/pesHanseniase"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PTuberculose"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV20"
+                            android:text="@string/pesTubercolose"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PSintRespira"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV21"
+                            android:text="@string/sintResp"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PTabagista"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV22"
+                            android:text="@string/tabagista"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PDomiciliado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV23"
+                            android:text="@string/domiAcamado"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PCondVulnerabilidade"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV24"
+                            android:text="@string/condVulnSocial"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PCondBolsaFamilia"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV25"
+                            android:text="@string/condBolsaFam"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PSaudeMental"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV26"
+                            android:text="@string/saudeMental"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PUsuAlcool"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV27"
+                            android:text="@string/usuAlcool"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_Ac_PUsuOutrasDrogas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="cbMV28"
+                            android:text="@string/usuDrogas"
+                            android:textSize="@dimen/FVD_Normal" />
+                    </LinearLayout>
+                    <!-- FIM Acompanhamento -->
+
+
+                    <!-- COMEÇO Controle ambiental/vetorial CAV -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="25dp"
+                        android:background="@drawable/selector_fieldset_background"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/GroupMarginVertical"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        android:paddingTop="@dimen/GroupMarginVertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ctrlAmbVet"
+                            android:textSize="@dimen/FVD_SubTitulo"
+                            android:textStyle="bold" />
+
+                        <CheckBox
+                            android:id="@+id/CB_CAV_AcaoEduca"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV29"
+                            android:text="@string/acaoEduca"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_CAV_ImovelFoco"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV30"
+                            android:text="@string/imovelFoco"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_CAV_AcaoMecanica"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                            android:tag="cbMV31"
+                            android:text="@string/acaoMecanica"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <CheckBox
+                            android:id="@+id/CB_CAV_TrataFocal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="cbMV32"
+                            android:text="@string/trataFocal"
+                            android:textSize="@dimen/FVD_Normal" />
+                        <!-- FIM Controle ambiental/vetorial CAV -->
+                    </LinearLayout>
+
+                    <CheckBox
+                        android:id="@+id/CB_MV_Egresso"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                        android:tag="cbMV33"
+                        android:text="@string/egressoInter"
+                        android:textSize="@dimen/FVD_Normal" />
+
+                    <CheckBox
+                        android:id="@+id/CB_MV_ConvAtiviColetas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                        android:tag="cbMV34"
+                        android:text="@string/conviteAtivCole"
+                        android:textSize="@dimen/FVD_Normal" />
+
+                    <CheckBox
+                        android:id="@+id/CB_MV_OrientaPrevencao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/Form_MarginBottomEntreCheck"
+                        android:tag="cbMV35"
+                        android:text="@string/oriPrev"
+                        android:textSize="@dimen/FVD_Normal" />
+
+                    <CheckBox
+                        android:id="@+id/CB_MV_Outros"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="cbMV36"
+                        android:text="@string/outros"
+                        android:textSize="@dimen/FVD_Normal" />
+                </LinearLayout>
+                <!-- FIM Motivo Visita -->
+
+                <!-- INICIO Antropometria -->
+                <LinearLayout
+                    android:id="@+id/ll_Antropometria"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/selector_fieldset_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/GroupMarginVertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/GroupMarginVertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/antropometria"
+                        android:textSize="@dimen/FVD_SubTitulo"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_AntroPeso"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/peso"
+                            android:textSize="@dimen/FVD_Normal"
+                            android:textStyle="normal" 
+                            android:layout_marginRight="10dp"/>
+
+                        <EditText
+                            android:id="@+id/ed_AntroPeso"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hintPeso"
+							android:maxLength="7"
+							android:ems="10"
+							android:singleLine="true"
+                    		android:selectAllOnFocus="true"
+							android:digits="0123456789,"                            
+                            android:inputType="numberSigned" >
+                        </EditText>
+                    </LinearLayout>
+                    
+					<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp" >
+                    
+                    	<TextView
+                            android:id="@+id/tv_AntroAltura"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/altura"
+                            android:textSize="@dimen/FVD_Normal"
+                            android:textStyle="normal" />
+
+                        <EditText
+                            android:id="@+id/ed_AntroAltura"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hintAltura"
+							android:maxLength="5"
+							android:ems="10"
+		                    android:singleLine="true"
+                    		android:selectAllOnFocus="true"							
+							android:digits="0123456789,"                            
+                            android:inputType="numberSigned" >
+                        </EditText>
+					</LinearLayout>                        
+                </LinearLayout>
+                <!-- FIM Antropometria -->
+
+
+                <!-- INICIO Desfecho -->
+                <LinearLayout
+                    android:id="@+id/ll_desfecho"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/selector_fieldset_background"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/GroupMarginVertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/GroupMarginVertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/desfecho"
+                        android:textSize="@dimen/FVD_SubTitulo"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/gbDesfecho"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/RB_DesfRealizada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="DesativaMotivoVisita"
+                            android:text="@string/visitaRealizada"
+                            android:checked="true"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <RadioButton
+                            android:id="@+id/RB_DesfRecusada"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="DesativaMotivoVisita"
+                            android:text="@string/visitaRecusada"
+                            android:textSize="@dimen/FVD_Normal" />
+
+                        <RadioButton
+                            android:id="@+id/RB_DesfAusente"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="DesativaMotivoVisita"
+                            android:text="@string/ausente"
+                            android:textSize="@dimen/FVD_Normal" />
+                    </RadioGroup>
+                </LinearLayout>
+                <!-- FIM Desfecho -->
+
+            </LinearLayout>
+            <!-- FIM Info Visita -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/infoCampo1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/infoCampo2"
+                android:textSize="16sp" />
+            
+    		<!-- INICIO BOTOES RODAPE -->
+    		
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginBottom="10dp"
+		        android:layout_marginTop="10dp"
+		        android:orientation="horizontal"
+		        android:paddingBottom="10dp"
+		        android:paddingTop="10dp" >
+		
+		        <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		
+		        <Button
+		            android:id="@+id/BtnSalvarCadCid"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:background="@drawable/btn_laranja_selector"
+		            android:onClick="salvarFicha"
+		            android:text="@string/btnSalvar"
+		            android:textSize="@dimen/Btn_Normal"
+		            android:textStyle="bold" />
+		
+		        <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="2" />
+		
+		        <Button
+		            android:id="@+id/BtnCancelar"
+		            android:layout_width="150dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:background="@drawable/btn_laranja_selector"
+		            android:onClick="cancelar"
+		            android:text="@string/btnCancelar"
+		            android:textSize="@dimen/Btn_Normal"
+		            android:textStyle="bold" />
+		
+		        <TextView
+		            android:layout_width="0dp"
+		            android:layout_height="wrap_content"
+		            android:layout_weight="1" />
+		    </LinearLayout>
+		    <!-- FIM BOTOES RODAPE -->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
