@@ -10,7 +10,7 @@
 
     <uses-sdk
         android:minSdkVersion="15"
-        android:targetSdkVersion="15" />
+        android:targetSdkVersion="19" />
 
     <application
         android:allowBackup="true"
@@ -21,7 +21,7 @@
             android:name="com.focus.activities.Login"
             android:configChanges="orientation"
             android:label="@string/app_name"
-            android:screenOrientation="sensorPortait"
+            android:screenOrientation="sensorPortrait"
             android:windowSoftInputMode="stateVisible" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,31 +33,31 @@
             android:name="com.focus.activities.MenuPrincipal"
             android:configChanges="orientation"
             android:label="@string/title_activity_menu_principal"
-            android:screenOrientation="sensorPortait" >
+            android:screenOrientation="sensorPortrait" >
         </activity>
         <activity
             android:name="com.focus.activities.ListaDomicilios"
             android:configChanges="orientation"
             android:label="@string/title_activity_lista_domicilios"
-            android:screenOrientation="sensorPortait" >
+            android:screenOrientation="sensorPortrait" >
         </activity>
         <activity
             android:name="com.focus.activities.CadastroDomicilio"
             android:configChanges="orientation"
             android:label="@string/title_activity_cadastro_domicilio"
-            android:screenOrientation="sensorPortait" >
+            android:screenOrientation="sensorPortrait" >
         </activity>
         <activity
             android:name="com.focus.activities.CadastroCidadao"
             android:configChanges="orientation"
             android:label="@string/title_activity_cadastro_cidadao"
-            android:screenOrientation="sensorPortait" >
+            android:screenOrientation="sensorPortrait" >
         </activity>
         <activity
             android:name="com.focus.activities.FichaVisitaDomiciliarC"
             android:configChanges="orientation"
             android:label="@string/title_activity_ficha_visita_domiciliar_c"
-            android:screenOrientation="sensorPortait" >
+            android:screenOrientation="sensorPortrait" >
         </activity>
     </application>
 </manifest>

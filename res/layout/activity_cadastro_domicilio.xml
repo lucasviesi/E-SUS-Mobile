@@ -28,17 +28,17 @@
                 android:gravity="center" >
             </TabWidget>
 
+            <!-- INICIO ABA 1-->
             <FrameLayout
                 android:id="@android:id/tabcontent"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
-
                 <LinearLayout
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal" >
-                    <ScrollView
+                    <ScrollView                    
                         android:id="@+id/scroll_Aba1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -74,24 +74,27 @@
 						        android:textSize="@dimen/FVD_Titulo" />
 			
 			                <TextView
+			                    android:id="@+id/TV_CEP"
 			                    android:layout_width="wrap_content"
 			                    android:layout_height="wrap_content"
 			                    android:text="@string/CEP"
-			                    android:textSize="@dimen/FVD_Normal" />
+			                    android:textSize="@dimen/FVD_Normal" 
+			                    android:textStyle="bold"/>
 			
 			                <EditText
 			                    android:id="@+id/ED_Cep"
 			                    android:layout_width="match_parent"
 			                    android:layout_height="wrap_content"
 			                    android:layout_marginBottom="20dp"
-			                    android:inputType="number" 
-			                    android:maxLength="8"/>
+			                    android:inputType="number"/>
 			
 			                <TextView
+			                    android:id="@+id/TV_Municipio"
 			                    android:layout_width="wrap_content"
 			                    android:layout_height="wrap_content"
 			                    android:text="@string/Municipio"
-			                    android:textSize="@dimen/FVD_Normal" />
+			                    android:textSize="@dimen/FVD_Normal" 
+			                    android:textStyle="bold"/>
 			
 			                <EditText
 			                    android:id="@+id/ED_Municipio"
@@ -101,10 +104,12 @@
 			                    android:inputType="text" />
 			
 			                <TextView
+			                    android:id="@+id/TV_Uf"
 			                    android:layout_width="wrap_content"
 			                    android:layout_height="wrap_content"
 			                    android:text="@string/UF"
-			                    android:textSize="@dimen/FVD_Normal" />
+			                    android:textSize="@dimen/FVD_Normal" 
+			                    android:textStyle="bold"/>
 			
 			                <EditText
 			                    android:id="@+id/ED_UF"
@@ -115,10 +120,12 @@
 			                    android:maxLength="2" />
 			
 			                <TextView
+			                    android:id="@+id/TV_Bairro"
 			                    android:layout_width="wrap_content"
 			                    android:layout_height="wrap_content"
 			                    android:text="@string/Bairro"
-			                    android:textSize="@dimen/FVD_Normal" />
+			                    android:textSize="@dimen/FVD_Normal" 
+			                    android:textStyle="bold"/>
 			
 			                <EditText
 			                    android:id="@+id/ED_Bairro"
@@ -128,10 +135,12 @@
 			                    android:inputType="text" />
 			
 			                <TextView
+			                    android:id="@+id/TV_Logradouro"
 			                    android:layout_width="wrap_content"
 			                    android:layout_height="wrap_content"
 			                    android:text="@string/TpLogradouro"
-			                    android:textSize="@dimen/FVD_Normal" />
+			                    android:textSize="@dimen/FVD_Normal"
+			                    android:textStyle="bold" />
 			
 			                <EditText
 			                    android:id="@+id/ED_TpLogradouro"
@@ -141,10 +150,12 @@
 			                    android:inputType="text" />
 			
 			                <TextView
+			                    android:id="@+id/TV_nomeLogradouro"
 			                    android:layout_width="wrap_content"
 			                    android:layout_height="wrap_content"
 			                    android:text="@string/NomeLogradouro"
-			                    android:textSize="@dimen/FVD_Normal" />
+			                    android:textSize="@dimen/FVD_Normal" 
+			                    android:textStyle="bold"/>
 			
 			                <EditText
 			                    android:id="@+id/ed_NomeLogradouro"
@@ -154,10 +165,12 @@
 			                    android:inputType="none" />
 			                
 			                <TextView
+			                    android:id="@+id/TV_Numero"
 			                    android:layout_width="70dp"
 			                    android:layout_height="wrap_content"
 			                    android:text="@string/Numero"
-			                    android:textSize="@dimen/FVD_Normal" />
+			                    android:textSize="@dimen/FVD_Normal" 
+			                    android:textStyle="bold"/>
 			
 			                <EditText
 			                    android:id="@+id/ed_Numero"
@@ -167,10 +180,12 @@
 			                    android:inputType="none" />
 			                
 			                <TextView
+			                    android:id="@+id/TV_Complemento"
 			                    android:layout_width="wrap_content"
 			                    android:layout_height="wrap_content"
 			                    android:text="@string/Complemento"
-			                    android:textSize="@dimen/FVD_Normal" />
+			                    android:textSize="@dimen/FVD_Normal" 
+			                    android:textStyle="bold"/>
 			
 			                <EditText
 			                    android:id="@+id/ed_Complemento"
@@ -183,7 +198,8 @@
 			                    android:layout_width="wrap_content"
 			                    android:layout_height="wrap_content"
 			                    android:text="@string/PtoRef"
-			                    android:textSize="@dimen/FVD_Normal" />
+			                    android:textSize="@dimen/FVD_Normal" 
+			                    android:textStyle="bold"/>
 			
 			                <EditText
 			                    android:id="@+id/ed_ptoReferencia"
@@ -197,7 +213,8 @@
 	                            android:layout_width="match_parent"
 	                            android:layout_height="match_parent"
 	                            android:text="@string/NumMicroArea"
-	                            android:textSize="@dimen/FVD_Normal" />
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
 	
 	                        <EditText
 	                            android:id="@+id/ed_NumMicroArea"
@@ -209,6 +226,62 @@
 	                            android:layout_marginBottom="40dp"
 	                            android:maxLength="2" />
 	                        
+	                        <TextView
+	                            android:id="@+id/tv_Imovel"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/TpImovel"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+	                        
+	                        <EditText
+			                    android:id="@+id/ed_Imovel"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="none" />
+	                        
+	                        <TextView
+	                            android:id="@+id/tv_TelefoneContato"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/TelefoneContato"
+	                            android:textSize="@dimen/FVD_Normal"
+	                            android:background="@drawable/borderbottom" 
+	                            android:textStyle="bold"/>
+	                        
+	                        <TextView
+	                            android:id="@+id/tv_TelResidencia"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/TelResidencia"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+	                        
+	                        <EditText
+			                    android:id="@+id/ed_TelResidencia"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="number" />
+	                        
+	                        <TextView
+	                            android:id="@+id/tv_TelContato"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/TelContato"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"
+	                            />
+	                        
+	                        <EditText
+			                    android:id="@+id/ed_TelContato"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="number"/>
+	                        
+	                        <!--  -->
 	                        <TextView
 				            	android:layout_width="match_parent"
 				            	android:layout_height="wrap_content"
@@ -223,8 +296,9 @@
 			            </LinearLayout>
 			            <!-- FIM Endereço/Local de Permanência -->
 				    </ScrollView>
-                </LinearLayout>
+                </LinearLayout><!-- FIM ABA 1 -->
 
+				<!-- INICIO ABA 2 -->
                 <LinearLayout
                     android:id="@+id/tab2"
                     android:layout_width="match_parent"
@@ -240,7 +314,7 @@
                         android:paddingLeft="@dimen/activity_horizontal_margin"
                         android:paddingRight="@dimen/activity_horizontal_margin" >
 			            <!-- INICIO Condicoes Moradia  -->
-			            <LinearLayout
+			         	<LinearLayout
 							android:id="@+id/ll_CondMoradia"                	
 			                android:layout_width="match_parent"
 			                android:layout_height="wrap_content"
@@ -265,13 +339,723 @@
 						        android:textColor="@color/white"
 						        android:textSize="@dimen/FVD_Titulo" />
 			                
-			                <ProgressBar
-			                    android:id="@+id/PB_aba2"
-			                    style="?android:attr/progressBarStyleLarge"
-			                    android:layout_marginBottom="20dp"
-			                    android:layout_width="match_parent"
-			                    android:layout_height="match_parent" />
-			                
+							<TextView
+                            	android:id="@+id/tv_SitMoradia"
+                            	android:layout_width="match_parent"
+                            	android:layout_height="match_parent"
+                            	android:text="@string/MoraSit"
+                            	android:textSize="17sp"
+                            	android:textStyle="bold"
+                            	android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+							
+						<RadioGroup
+			                android:id="@+id/RadioButtonMoraSit"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+								
+			           	    <RadioButton  
+								android:id="@+id/Moradia01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbMoradia01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Moradia02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbMoradia02"/>
+		            	    		         	       
+		            	    <RadioButton  
+								android:id="@+id/Moradia03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbMoradia03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Moradia04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbMoradia04"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Moradia05"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbMoradia05"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Moradia06"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbMoradia06"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Moradia07"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbMoradia07"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Moradia08"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbMoradia08"
+								android:focusable="true"
+    							android:focusableInTouchMode="true"/>				
+			            </RadioGroup>
+			            
+						<TextView
+                           	android:id="@+id/tv_SitLocalizacao"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraLocalizacao"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:focusable="true"
+    						android:focusableInTouchMode="true"/>
+						
+						<RadioGroup
+			                android:id="@+id/RadioButtonLocalizacao"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+								
+			           	    <RadioButton  
+								android:id="@+id/Localizacao01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbLocalizacao01"
+								android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Localizacao02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbLocalizacao02"
+								android:focusable="true"
+    							android:focusableInTouchMode="true"/>		            	    		         	       		            	    				
+			            </RadioGroup>
+						
+						<TextView
+                           	android:id="@+id/tv_SitDomicilio"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraDomicilio"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+						
+						<RadioGroup
+			                android:id="@+id/RadioButtonDomicilio"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+								
+			           	    <RadioButton  
+								android:id="@+id/Domicilio01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbDomicilio01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Domicilio02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbDomicilio02"/>
+		            	    		         	       
+		            	    <RadioButton  
+								android:id="@+id/Domicilio03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbDomicilio03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Domicilio04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbDomicilio04"
+								android:focusable="true"
+    							android:focusableInTouchMode="true"/>			            	    			
+			            </RadioGroup>
+			            
+						<TextView
+                           	android:id="@+id/tv_MoraNum"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraNum"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+						
+						<EditText
+		                    android:id="@+id/ED_MoraNum"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="20dp"
+		                    android:inputType="number" />
+						
+						<TextView
+                           	android:id="@+id/tv_Sit"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraComodos"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>						
+			            
+						<EditText
+		                    android:id="@+id/ED_MoraComodo"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="20dp"
+		                    android:inputType="number" />
+						
+						<TextView
+                           	android:id="@+id/tv_Acesso"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraAcesso"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+						
+						<RadioGroup
+			                android:id="@+id/RadioButtonAcesso"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+								
+			           	    <RadioButton  
+								android:id="@+id/Acesso01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAcesso01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Acesso02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAcesso02"/>
+		            	    		         	       
+		            	    <RadioButton  
+								android:id="@+id/Acesso03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAcesso03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Acesso04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAcesso04"/>			
+			            </RadioGroup>
+			            
+						<TextView
+                           	android:id="@+id/tv_Energia"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraEnergia"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+						
+						<RadioGroup
+			                android:id="@+id/RadioButtonEnergia"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+						
+							<RadioButton  
+								android:id="@+id/MoraEnergia01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbEnergia01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Energia02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbEnergia02"/>
+			            </RadioGroup>
+			            
+						<TextView
+                           	android:id="@+id/tv_Rural"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraRural"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+						
+						<RadioGroup
+			                android:id="@+id/RadioButtonRural"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+						
+							<RadioButton  
+								android:id="@+id/MoraRural01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbRural01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Rural02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbRural02"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Rural03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbRural03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Rural04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbRural04"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Rural05"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbRural05"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Rural06"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbRural06"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Rural07"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbRural07"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Rural08"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbRural08"/>
+			            </RadioGroup>
+			            
+						<TextView
+                           	android:id="@+id/tv_Material"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraMaterial"
+                           	android:background="@drawable/borderbottom"
+                            android:textSize="19sp"
+                            android:textStyle="bold"/>
+						
+						<TextView
+                           	android:id="@+id/tv_Alvenaria"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraAlvenaria"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+						
+						<RadioGroup
+			                android:id="@+id/RadioButtonAlvenaria"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+						
+							<RadioButton  
+								android:id="@+id/Alvenaria01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAlvenaria01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Alvenaria02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAlvenaria02"/>
+		                </RadioGroup>
+		                
+						<TextView
+                           	android:id="@+id/tv_Taipa"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraTaipa"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+						
+						<RadioGroup
+			                android:id="@+id/RadioButtonTaipa"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Taipa01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbTaipa01"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Taipa02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbTaipa02"/>
+		            	</RadioGroup>
+		            	
+						<TextView
+                           	android:id="@+id/tv_Outro"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraOutros"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+						
+		            	<RadioGroup
+			                android:id="@+id/RadioButtonOutros"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+		                
+		            	    <RadioButton  
+								android:id="@+id/Outros01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbOutros01"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Outros02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbOutros02"/>
+		            	    
+		            	    <RadioButton 	 
+								android:id="@+id/Outros03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbOutros03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Outros04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbOutros04"/>
+			            </RadioGroup>
+			            
+		            	<TextView
+                           	android:id="@+id/tv_Abastecimento"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraMaterial"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+						
+		            	<RadioGroup
+			                android:id="@+id/RadioButtonAbastecimento"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+		                
+		            	    <RadioButton  
+								android:id="@+id/Abastecimento01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAbastecimento01"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Abastecimento02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAbastecimento02"/>
+		            	    
+		            	    <RadioButton 	 
+								android:id="@+id/Abastecimento03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAbastecimento03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Abastecimento04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAbastecimento04"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Abastecimento05"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAbastecimento05"/>
+			            </RadioGroup>
+			            
+		            	<TextView
+                           	android:id="@+id/tv_Escoamento"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraEscoamento"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+			            
+		            	<RadioGroup
+			                android:id="@+id/RadioButtonEscoamento"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+		                
+		            	    <RadioButton  
+								android:id="@+id/Escoamento01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbEscoamento01"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Escoamento02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbEscoamento02"/>
+		            	    
+		            	    <RadioButton 	 
+								android:id="@+id/Escoamento03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbEscoamento03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Escoamento04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbEscoamento04"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Escoamento05"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbEscoamento05"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Escoamento06"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbEscoamento06"/>
+			            </RadioGroup>
+			            
+		            	<TextView
+                           	android:id="@+id/tv_Consumo"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraEscoamento"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+			            
+		            	<RadioGroup
+			                android:id="@+id/RadioButtonConsumo"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+		                
+		            	    <RadioButton  
+								android:id="@+id/Consumo01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbConsumo01"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Consumo02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbConsumo02"/>
+		            	    
+		            	    <RadioButton 	 
+								android:id="@+id/Consumo03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbConsumo03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Consumo04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbConsumo04"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Consumo05"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbConsumo05"/>
+			            </RadioGroup>
+			            
+		            	<TextView
+                           	android:id="@+id/tv_Lixo"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraLixo"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+			            
+		            	<RadioGroup
+			                android:id="@+id/RadioButtonLixo"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+		                
+		            	    <RadioButton  
+								android:id="@+id/Lixo01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbLixo01"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Lixo02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbLixo02"/>
+		            	    
+		            	    <RadioButton 	 
+								android:id="@+id/Lixo03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbLixo03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Lixo04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbLixo04"/>
+			            </RadioGroup>
+			            
+		            	<TextView
+                           	android:id="@+id/tv_Animais"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraAnimais"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+			            
+		            	<RadioGroup
+			                android:id="@+id/RadioButtonAnimais"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+		                
+		            	    <RadioButton  
+								android:id="@+id/Animais01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAnimais01"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Animais02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbAnimais02"/>
+
+			            </RadioGroup>'
+			            
+		            	<TextView
+                           	android:id="@+id/tv_AnimaisQual"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraAnimaisQual"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+		            	
+		            	<CheckBox android:id="@+id/Cbgato"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/CbAnimais01"
+					        android:enabled="false"/>
+							    
+					    <CheckBox android:id="@+id/CbCachorro"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/CbAnimais02"
+					        android:enabled="false"/>
+					    
+					    <CheckBox android:id="@+id/CbPassaro"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/CbAnimais03"
+					        android:enabled="false"/>
+					    
+					    <CheckBox android:id="@+id/CbAniOutros"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/CbAnimais04"
+					        android:enabled="false"/>
+					    
+					    <TextView
+                           	android:id="@+id/tv_AnimaisQtd"
+                           	android:layout_width="match_parent"
+                           	android:layout_height="match_parent"
+                           	android:text="@string/MoraAnimaisQtd"
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
+					    
+					    <EditText
+		                    android:id="@+id/ED_AnimaisQtd"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="20dp"
+		                    android:inputType="number" 
+		                    android:enabled="false"/>
+					    					  			            
+			                <!--  -->
 			                <TextView
 				            	android:layout_width="match_parent"
 				            	android:layout_height="wrap_content"
@@ -328,13 +1112,751 @@
 						        android:textColor="@color/white"
 						        android:textSize="@dimen/FVD_Titulo" />
 			                
-			                <ProgressBar
-			                    android:id="@+id/PB_aba3"
-			                    style="?android:attr/progressBarStyleLarge"
-			                    android:layout_marginBottom="20dp"
-			                    android:layout_width="match_parent"
-			                    android:layout_height="match_parent" />
 			                
+			                <LinearLayout
+								android:id="@+id/ll_Familia01"                	
+				                android:layout_width="match_parent"
+				                android:layout_height="wrap_content"
+				                android:layout_marginBottom="15dp"
+				                android:background="@drawable/borders"
+				                android:orientation="vertical"
+				                android:paddingBottom="@dimen/GroupMarginVertical1"
+				                android:paddingLeft="@dimen/activity_horizontal_margin1"
+				                android:paddingRight="@dimen/activity_horizontal_margin1"
+				                android:paddingTop="@dimen/GroupMarginVertical1" >	
+			                
+			                <TextView
+	                            android:id="@+id/tv_Familia"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiFamilia"
+	                            android:textSize="@dimen/FVD_Normal"
+	                            android:gravity="center" 
+	                            android:textStyle="bold"
+	                            android:background="@drawable/borderbottom"
+	                            android:layout_marginBottom="20dp"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_Prontuario"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiProntuario"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiProntuario"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiCNS"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiCNS"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiCNS"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="text"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiData"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiData"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiData"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiRenda"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiRenda"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <RadioGroup
+			            	    android:id="@+id/RadioButtonRbFamiliaRenda"
+			             	    android:layout_width="wrap_content"
+			                	android:layout_height="wrap_content" 
+			               		android:layout_marginBottom="15dp"
+			                	android:orientation="horizontal">
+		                
+		            	    <RadioButton
+								android:id="@+id/RbFamiliaRenda01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda01"
+								android:layout_marginLeft="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda02"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda03"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda04"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda05"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda05"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda06"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda06"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda07"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda07"
+								android:layout_marginRight="10dp"/>
+			            	</RadioGroup>
+			            	
+			                <TextView
+	                            android:id="@+id/tv_FamiMenbros"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiMenbros"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiMenbros"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiReside"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiReside"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiReside"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="date"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiMudou"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiMudou"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <CheckBox 
+			                    android:id="@+id/Cb_Mudou"
+					        	android:layout_width="wrap_content"
+					        	android:layout_height="wrap_content"
+					        	android:text="@string/FamiMudou"/>	
+			                </LinearLayout>
+			                <!--  -->
+			                <LinearLayout
+								android:id="@+id/ll_Familia02"                	
+				                android:layout_width="match_parent"
+				                android:layout_height="wrap_content"
+				                android:layout_marginBottom="15dp"
+				                android:background="@drawable/borders"
+				                android:orientation="vertical"
+				                android:paddingBottom="@dimen/GroupMarginVertical1"
+				                android:paddingLeft="@dimen/activity_horizontal_margin1"
+				                android:paddingRight="@dimen/activity_horizontal_margin1"
+				                android:paddingTop="@dimen/GroupMarginVertical1" >	
+			                
+			                <TextView
+	                            android:id="@+id/tv_Familia01"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiFamilia"
+	                            android:textSize="@dimen/FVD_Normal"
+	                            android:gravity="center" 
+	                            android:textStyle="bold"
+	                            android:background="@drawable/borderbottom"
+	                            android:layout_marginBottom="20dp"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_Prontuario01"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiProntuario"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiProntuario01"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiCNS01"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiCNS"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiCNS01"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="text"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiData01"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiData"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiData01"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="date"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiRenda01"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiRenda"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <RadioGroup
+			                android:id="@+id/RadioButtonRbFamiliaRenda01"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp"
+			                android:orientation="horizontal">
+		                
+		            	    <RadioButton
+								android:id="@+id/RbFamiliaRenda0x1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda01"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda0x2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda02"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda0x3"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda03"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda0x4"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda04"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda0x5"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda05"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda0x6"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda06"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda0x7"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda07"
+								android:layout_marginRight="10dp"/>
+			            	</RadioGroup>
+			            	
+			                <TextView
+	                            android:id="@+id/tv_FamiMenbros01"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiMenbros"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiMenbros01"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiReside01"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiReside"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiReside01"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiMudou01"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiMudou"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <CheckBox 
+			                    android:id="@+id/Cb_Mudou01"
+					        	android:layout_width="wrap_content"
+					        	android:layout_height="wrap_content"
+					        	android:text="@string/FamiMudou"/>	
+			                </LinearLayout>
+			                <!--  -->
+			                
+			                <LinearLayout
+								android:id="@+id/ll_Familia03"                	
+				                android:layout_width="match_parent"
+				                android:layout_height="wrap_content"
+				                android:layout_marginBottom="15dp"
+				                android:background="@drawable/borders"
+				                android:orientation="vertical"
+				                android:paddingBottom="@dimen/GroupMarginVertical1"
+				                android:paddingLeft="@dimen/activity_horizontal_margin1"
+				                android:paddingRight="@dimen/activity_horizontal_margin1"
+				                android:paddingTop="@dimen/GroupMarginVertical1" >	
+			                
+			                <TextView
+	                            android:id="@+id/tv_Familia02"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiFamilia"
+	                            android:textSize="@dimen/FVD_Normal"
+	                            android:gravity="center" 
+	                            android:textStyle="bold"
+	                            android:background="@drawable/borderbottom"
+	                            android:layout_marginBottom="20dp"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_Prontuario02"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiProntuario"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiProntuario02"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiCNS02"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiCNS"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiCNS02"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="text"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiData02"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiData"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiData02"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiRenda02"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiRenda"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <RadioGroup
+				                android:id="@+id/RadioButtonRbFamiliaRenda02"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content" 
+				                android:layout_marginBottom="15dp"
+				                android:orientation="horizontal">
+		                
+		            	    <RadioButton
+								android:id="@+id/RbFamiliaRenda02x1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda01"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda02x2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda02"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda02x3"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda03"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda02x4"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda04"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda02x5"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda05"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda02x6"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda06"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda02x7"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda07"
+								android:layout_marginRight="10dp"/>
+			            	</RadioGroup>
+			            	
+			                <TextView
+	                            android:id="@+id/tv_FamiMenbros02"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiMenbros"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiMenbros02"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiReside02"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiReside"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiReside02"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiMudou02"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiMudou"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <CheckBox 
+			                    android:id="@+id/Cb_Mudou02"
+					        	android:layout_width="wrap_content"
+					        	android:layout_height="wrap_content"
+					        	android:text="@string/FamiMudou"/>	
+			                </LinearLayout>
+			                <!--  -->
+			                
+			                <LinearLayout
+								android:id="@+id/ll_Familia04"                	
+				                android:layout_width="match_parent"
+				                android:layout_height="wrap_content"
+				                android:layout_marginBottom="15dp"
+				                android:background="@drawable/borders"
+				                android:orientation="vertical"
+				                android:paddingBottom="@dimen/GroupMarginVertical1"
+				                android:paddingLeft="@dimen/activity_horizontal_margin1"
+				                android:paddingRight="@dimen/activity_horizontal_margin1"
+				                android:paddingTop="@dimen/GroupMarginVertical1" >	
+			                
+			                <TextView
+	                            android:id="@+id/tv_Familia03"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiFamilia"
+	                            android:textSize="@dimen/FVD_Normal"
+	                            android:gravity="center" 
+	                            android:textStyle="bold"
+	                            android:background="@drawable/borderbottom"
+	                            android:layout_marginBottom="20dp"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_Prontuario03"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiProntuario"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiProntuario03"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiCNS03"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiCNS"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiCNS03"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="text"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiData03"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiData"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiData03"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiRenda03"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiRenda"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <RadioGroup
+			                android:id="@+id/RadioButtonRbFamiliaRenda03"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp"
+			                android:orientation="horizontal">
+		                
+		            	    <RadioButton
+								android:id="@+id/RbFamiliaRenda03x1"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda01"
+								android:orientation="horizontal"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda03x2"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda02"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda03x3"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda03"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda03x4"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda04"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda03x5"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda05"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda03x6"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda06"
+								android:layout_marginRight="10dp"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/RbFamiliaRenda03x7"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbFamiliaRenda07"
+								android:layout_marginRight="10dp"/>
+			            	</RadioGroup>
+			            	
+			                <TextView
+	                            android:id="@+id/tv_FamiMenbros03"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiMenbros"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiMenbros03"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiReside03"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiReside"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_FamiReside03"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="10dp"
+			                    android:inputType="number"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_FamiMudou03"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/FamiMudou"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <CheckBox 
+			                    android:id="@+id/Cb_Mudou03"
+					        	android:layout_width="wrap_content"
+					        	android:layout_height="wrap_content"
+					        	android:text="@string/FamiMudou"/>	
+			                </LinearLayout>
+			                            
+			                <!--  -->
 			                <TextView
 				            	android:layout_width="match_parent"
 				            	android:layout_height="wrap_content"
@@ -391,13 +1913,153 @@
 						        android:textColor="@color/white"
 						        android:textSize="@dimen/FVD_Titulo" />
 			                
-			                <ProgressBar
-			                    android:id="@+id/PB_aba4"
-			                    style="?android:attr/progressBarStyleLarge"
-			                    android:layout_marginBottom="20dp"
-			                    android:layout_width="match_parent"
-			                    android:layout_height="match_parent" />
+			                <TextView
+	                            android:id="@+id/tv_InstituicaoNome"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/InstPerma"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>	               
 			                
+			                <EditText
+			                    android:id="@+id/ED_Instituicao"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="text"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_InstPermaVinculados"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/InstPermaVinculados"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <RadioGroup
+				                android:id="@+id/RadioButtonTermoRecusoIdentificacao"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content" 
+				                android:layout_marginBottom="15dp">
+			                
+			            	    <RadioButton  
+									android:id="@+id/TermoRecusoIdentificacao01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTermoRecusaInstituicao01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/TermoRecusoIdentificacao02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTermoRecusaInstituicao02"/>
+				            </RadioGroup>
+				            
+			                <TextView
+	                            android:id="@+id/tv_InstPermaidentificacao"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/InstPermaIdentificacao"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_InstPermaNome"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/InstPermaNome"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_InstPermaNome"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="text"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_InstPermaCNS"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/InstPermaCNS"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_InstPermaCNS"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="text"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_InstPermaInstituicao"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/InstPermaInstituicao"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_InstPermaInstituicao"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="text"/>
+			                
+			                <TextView
+	                            android:id="@+id/tv_InstPermaTel"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/InstPermaTel"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"/>
+			                
+			                <EditText
+			                    android:id="@+id/ED_InstPermaTel"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="20dp"
+			                    android:inputType="number"/>
+			                
+			                <!-- TERMO RECUSA INSTITUICAO -->
+			                <TextView
+	                            android:id="@+id/tv_TermoRecusaInstituicao"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/TermoRecusaInstituicao"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"
+	                            android:background="@drawable/borderbottom"/>
+			                
+				          	<CheckBox 
+				          	    android:id="@+id/CbTermoRecusainstituicao"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/RbTermoRecusaInstituicao"
+						        android:layout_marginBottom="20dp"/>
+				          
+				          	<!-- TERMO RECUSA -->
+				          	<TextView 
+	                            android:id="@+id/tv_TermoRecusa"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:text="@string/TermoRecusa"
+	                            android:textSize="@dimen/FVD_Normal" 
+	                            android:textStyle="bold"
+	                            android:background="@drawable/borderbottom"/>
+			                
+				          	<CheckBox 
+				          	    android:id="@+id/CbTermoRecusa"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/RbTermoRecusa"
+				          		android:layout_marginBottom="20dp"/>
+			                
+			                <!--  -->
 			                <TextView
 				            	android:layout_width="match_parent"
 				            	android:layout_height="wrap_content"

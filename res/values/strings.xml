@@ -34,7 +34,7 @@
 	<string name="infoProf">Informações do Profissional</string>
 	<string name="nome">Nome</string>
 	<string name="EquipProf">Nome Equipe *</string>
-	<string name="CNS">Número CNS *</string>
+	<string name="CNS">Número CNS </string>
 	<string name="CPF">CPF *</string>
 	<string name="CBO">CBO *</string>
 	<string name="CNES">Cód. CNES Unidade *</string>
@@ -126,7 +126,7 @@
 	<string name="contD_LogoFocus">Logo Focus</string>
 	<string name="CodArea">Código Área *</string>
 	<string name="DescriArea">Descrição Área *</string>	
-	<string name="NumMicroArea">Número Microárea *</string>
+	<string name="NumMicroArea">Número Microárea*</string>
 	<string name="DescriMicroArea">Descrição Microárea *</string>	
 	<string name="microareaFA">FA (Fora de Área)</string>	
 	<string name="tipoImovel">Tipo de Imóvel *</string>
@@ -162,18 +162,22 @@
 	<string name="Numero">Número *</string>
 	<string name="Complemento">Complemento </string>
 	<string name="PtoRef">Pto. Referência </string>
-	
+	<string name="TpImovel">Tipo de Imóvel </string>
+	<string name="TelefoneContato">Telefones para Contato </string>
+	<string name="TelResidencia">Tel. Residêncial </string>
+	<string name="TelContato">Tel. Contato </string>
+					
 	<string name="RespFam">Responsável Familiar </string>
 	<string name="CnsResp">CNS do Responsável Familiar </string>
-	<string name="NomeComp">Nome Completo *</string>
+	<string name="NomeComp">Nome Completo*</string>
 	<string name="NomeSocial">Nome Social </string>
 	<string name="dtNasc">Data Nascimento* </string>
 	<string name="SexoCid">Sexo* </string>
 	<string name="RacaCor">Raça Cor* </string>
 	<string name="Etnia">Etnia** </string>
 	<string name="Nis">Nº NIS (PIS/PASEP) </string>
-	<string name="NomeMae">Nome da Mãe </string>
-	<string name="NomePai">Nome do Pai </string>
+	<string name="NomeMae">Nome da Mãe* </string>
+	<string name="NomePai">Nome do Pai* </string>
 	<string name="Nacionalidade">Nacionalidade* </string>
 	<string name="PaisNasc">País de Nascimento** </string>
 	<string name="DtNaturalizacao">Data de Naturalização** </string>
@@ -183,6 +187,437 @@
 	<string name="Celular">Telefone Celular </string>
 	<string name="Email">E-Mail </string>
 	
+	<string name="RbResponsavel01">Sim</string>
+	<string name="RbResponsavel02">Não</string>
+
+	<string name="RbCor01">Branca</string>
+	<string name="RbCor02">Preta</string>	
+	<string name="RbCor03">Parda</string>
+	<string name="RbCor04">Amarela</string>
+	<string name="RbCor05">Indígina</string>
+
+	<string name="RbSexo01">Masculino</string>
+	<string name="RbSexo02">Feminino</string>
+
+	<string name="RbNacionalidade01">Brasileiro</string>
+	<string name="RbNacionalidade02">Naturalizado</string>
+	<string name="RbNacionalidade03">Estrangeiro</string>
+							
+	<!-- TEXT VIEW ABA 2 -->
+	<string name="InfoOcupacao">Ocupação</string>
+	<string name="InfoFrequenta">Frequenta escola ou creche*</string>
+	<string name="InfoCurso">Qual é o curso mais elevado que frequenta ou frequentou?</string>
+	<string name="InfoTrabalho">Situação no mercado de trabalho</string>
+	<string name="InfoCriancaFica">Crianças de 0 a 9 anos, com quem fica ?</string>
+	<string name="InfoFreqCuidador">Frequenta cuidador tradicional?</string>
+	<string name="InfoGrupoComu">Participa de algum grupo comunitário</string>
+	<string name="InfoPovoComu">É Membro de povo ou de comunidade tradicional?</string>
+	<string name="InfoPovoComuQual">Se sim, qual?</string>
+	<string name="InfoOriSexual">Deseja informar orientação sexual?</string>
+	<string name="InfoOriSexualQual">Se sim, qual?</string>
+	<string name="InfoGenero">Deseja informar identidade do gênero?</string>
+	<string name="InfoGeneroQual">Se sim, qual?</string>
+	<string name="InfoDeficiencia">Tem alguma deficiência?*</string>
+	<string name="InfoDeficienciaQual">Se sim, qual?</string>
+	<string name="InfoPlanoSaude">Possui plano de saúde privado?</string>
+	<string name="InfoSaidaCidadao">Saída do cidadão do cadastro</string>
+	<string name="InfoSaidaCidadaoQual">Se óbito, indique</string>
+	<string name="InfoDtObito">Data do óbito**</string>
+	<string name="InfoEdNumeroDO">Número da D.O.</string>
+	
+	<!-- CHECKBOX ABA 2 -->
+	<string name="Cri01">Adulto Responsável</string>
+	<string name="Cri02">Outra(s) Criança(s)</string>
+	<string name="Cri03">Adolescente</string>
+	<string name="Cri04">Sozinha</string>
+	<string name="Cri05">Creche</string>
+	<string name="Cri06">Outro</string>
+	
+	<string name="RbDeficienciaQual01">Auditiva</string>
+	<string name="RbDeficienciaQual02">Intelectual/Cognitiva</string>
+	<string name="RbDeficienciaQual03">Visual</string>
+	<string name="RbDeficienciaQual04">Física</string>
+	<string name="RbDeficienciaQual05">Outra</string>
+			
+	<!-- RADIO BUTTON PARENTESCO ABA 2 -->
+	<string name="RbParentesco">Relação de parentesco com o responsável familiar</string>
+	<string name="RbParen01">Cônjuge/Companheiro(a)</string>
+	<string name="RbParen02">Filho(a)</string>
+	<string name="RbParen03">Enteado(a)</string>
+	<string name="RbParen04">Neto(a)/Bisneto(a)</string>
+	<string name="RbParen05">Pai/Mãe</string>
+	<string name="RbParen06">Sogro(a)</string>
+	<string name="RbParen07">Irmão/Irmã</string>
+	<string name="RbParen08">Genro/Nora</string>
+	<string name="RbParen09">Outro Parente</string>
+	<string name="RbParen10">Não Parente</string>
+	
+	<string name="RbSaidaCid01">Mudança de Território</string>
+	<string name="RbSaidaCid02">Óbito</string>
+	
+	<string name="RbFreq01">Sim</string>
+	<string name="RbFreq02">Não</string>
+
+	<string name="RbFreqCuid01">Sim</string>
+	<string name="RbFreqCuid02">Não</string>
+	
+	<string name="RbGrupo01">Sim</string>
+	<string name="RbGrupo02">Não</string>	
+
+	<string name="RbPlanoSaude01">Sim</string>
+	<string name="RbPlanoSaude02">Não</string>
+
+	<string name="RbComuTradi01">Sim</string>
+	<string name="RbComuTradi02">Não</string>
+
+	<string name="RbOriSexual01">Sim</string>
+	<string name="RbOriSexual02">Não</string>
+	
+	<string name="RbGenero01">Sim</string>
+	<string name="RbGenero02">Não</string>
+	
+	<string name="RbDeficiencia01">Sim</string>
+	<string name="RbDeficiencia02">Não</string>
+	
+	<string name="RbOriSexualQual01">Heterossexual</string>
+	<string name="RbOriSexualQual02">Bissexual</string>
+	<string name="RbOriSexualQual03">Homossexual(gay / lésbica)</string>
+	<string name="RbOriSexualQual04">Outra</string>
+	
+	<string name="RbGeneroQual01">Homem transexual</string>
+	<string name="RbGeneroQual02">Mulher transexual</string>
+	<string name="RbGeneroQual03">Travesti</string>
+	<string name="RbGeneroQual04">Outro</string>
+		
+	<string name="RbCurso01">Creche</string>
+	<string name="RbCurso02">Pré-Escola(Exceto CA)</string>
+	<string name="RbCurso03">Classe de Alfabetização - CA</string>
+	<string name="RbCurso04">Ensino Fundamental 1ª a 4ª séries</string>
+	<string name="RbCurso05">Ensino Fundamental 5ª a 8ª séries</string>
+	<string name="RbCurso06">Ensino Fundamental Completo</string>
+	<string name="RbCurso07">Ensino Fundamental Especial</string>
+	<string name="RbCurso08">Ensino Fundamental EJA - Séries Iniciais (Supletivo 1ª a 4ª)</string>
+	<string name="RbCurso09">Ensino Fundamental EJA - Séries Finais (Supletivo 5ª a 8ª)</string>
+	<string name="RbCurso10">Ensino Médio, Médio 2º Ciclo ](Científico, técnico etc.)</string>
+	<string name="RbCurso11">Ensino Médio Especial</string>
+	<string name="RbCurso12">Ensino Médio EJA (Supletivo)</string>
+	<string name="RbCurso13">Superior, Aperfeiçoamento, Especialização, Mestrado, Dotorado</string>
+	<string name="RbCurso14">Alfabetização para adultos (Mobral etc.)</string>
+	<string name="RbCurso15">Nenhum</string>
+	
+	<string name="RbTrabalho01">Empregador</string>
+	<string name="RbTrabalho02">Assalariado com carteiro de trabalho</string>
+	<string name="RbTrabalho03">Assalariado sem carteira de trabalho</string>
+	<string name="RbTrabalho04">Autônomo com previdência social</string>
+	<string name="RbTrabalho05">Autônomo sem previdência social</string>
+	<string name="RbTrabalho06">Aposentado/Pensionista</string>
+	<string name="RbTrabalho07">Desempregado</string>
+	<string name="RbTrabalho08">Não trabalha</string>
+	<string name="RbTrabalho09">Servidor público/militar</string>
+	<string name="RbTrabalho10">Outro</string>
+	
+	<!-- TEXT VIEW ABA 3 -->
+	<string name="QuestCondSit">Condições/Situação de Saúde Gerais</string>
+	<string name="QuestGestante">Está Gestante?</string>
+	<string name="QuestGestanteQual">Se sim, qual é a maternidade de referência?</string>
+	<string name="QuestPeso">Sobre seu Peso, você se considera?</string>
+	<string name="QuestFumante">Está Fumante?</string>
+	<string name="QuestAlcool">Faz uso de álcool?</string>
+	<string name="QuestDroga">Faz uso de outras drogas?</string>
+	<string name="QuestHipertensao">Tem hipertensão arterial?</string>
+	<string name="QuestDiabetes">Tem Diabetes?</string>
+	<string name="QuestAVC">Teve AVC/Derrame?</string>
+	<string name="QuestInfarto">Teve infarto?</string>
+	<string name="QuestCardiaca">Tem doença cardiaca/do coração?</string>
+	<string name="QuestCardiacaQual">Se sim, indique qual(is).**</string>
+	<string name="QuestRim">Tem ou teve problemas nos rins</string>
+	<string name="QuestRimQual">Se sim, indique qual(is).**</string>
+	<string name="QuestRespiratoria">Tem doença respiratória/no pulmão</string>
+	<string name="QuestRespiratoriaQual">Se sim, indique qual(is).**</string>
+	<string name="QuestHanseniase">Está com hanseníase?</string>
+	<string name="QuestTuberculose">Está com Tuberculose?</string>
+	<string name="QuestCancer">Tem ou teve cancêr?</string>
+	<string name="QuestInternacao">Teve alguma internação nos ultimos 12 meses?</string>
+	<string name="QuestInternacaoQual">Se sim, por qual causa.</string>
+	<string name="QuestDiagnostico">Teve diagnóstico de algum problema de saúde mental por profissional de saúde?</string>
+	<string name="QuestAcamado">Está acamado?</string>
+	<string name="QuestDomiciliado">Está domiciliado?</string>
+	<string name="QuestPlantas">Usa plantas medicinais?</string>
+	<string name="QuestPlantasQual">Se sim, indique qual(is).</string>
+	<string name="QuestPraticas">Usa outras práticas integrativas e complementares?</string>
+	<string name="QuestSaude">Outras condições de saúde?</string>
+	<string name="QuestQual1">1 - Qual?</string>
+	<string name="QuestQual2">2 - Qual?</string>
+	<string name="QuestQual3">3 - Qual?</string>
+				
+	<!-- RADIO BUTTON PARENTESCO ABA 2 -->
+	<string name="RbGestante01">Sim</string>
+	<string name="RbGestante02">Não</string>
+
+	<string name="RbPeso01">Abaixo do peso</string>
+	<string name="RbPeso02">Peso adequado</string>
+	<string name="RbPeso03">Acima do peso</string>
+	
+	<string name="RbFumante01">Sim</string>
+	<string name="RbFumante02">Não</string>
+
+	<string name="RbAlcool01">Sim</string>
+	<string name="RbAlcool02">Não</string>
+
+	<string name="RbInternacao01">Sim</string>
+	<string name="RbInternacao02">Não</string>		
+	
+	<string name="RbDrogas01">Sim</string>
+	<string name="RbDrogas02">Não</string>
+
+	<string name="RbHipertensao01">Sim</string>
+	<string name="RbHipertensao02">Não</string>
+	
+	<string name="RbDiabetes01">Sim</string>
+	<string name="RbDiabetes02">Não</string>
+	
+	<string name="RbAVC01">Sim</string>
+	<string name="RbAVC02">Não</string>
+	
+	<string name="RbInfarto01">Sim</string>
+	<string name="RbInfarto02">Não</string>
+		
+	<string name="RbCardiaca01">Sim</string>
+	<string name="RbCardiaca02">Não</string>
+	
+	<string name="RbRim01">Sim</string>
+	<string name="RbRim02">Não</string>
+
+	<string name="RbPulmao01">Sim</string>
+	<string name="RbPulmao02">Não</string>
+	
+	<string name="Rbhanseniase01">Sim</string>
+	<string name="RbHanseniase02">Não</string>
+	
+	<string name="RbTuberculose01">Sim</string>
+	<string name="RbTuberculose02">Não</string>
+	
+	<string name="RbCancer01">Sim</string>
+	<string name="RbCancer02">Não</string>
+
+	<string name="RbDiagnostico01">Sim</string>
+	<string name="RbDiagnostico02">Não</string>
+
+	<string name="RbAcamado01">Sim</string>
+	<string name="RbAcamado02">Não</string>
+				
+	<string name="RbDomiciliado01">Sim</string>
+	<string name="RbDomiciliado02">Não</string>
+	
+	<string name="RbPlantas01">Sim</string>
+	<string name="RbPlantas02">Não</string>
+	
+	<string name="RbPratica01">Sim</string>
+	<string name="RbPratica02">Não</string>
+	
+	<!-- CHECKBOX ABA 3 -->
+	<string name="CbCardiaca01">Insufuciência cardiaca</string>
+	<string name="CbCardiaca02">Outra</string>
+	<string name="CbCardiaca03">Não sabe</string>
+
+	<string name="CbRim01">Insufuciência cardiaca</string>
+	<string name="CbRim02">Outra</string>
+	<string name="CbRim03">Não sabe</string>
+	
+	<string name="CbPulmao01">Insufuciência cardiaca</string>
+	<string name="CbPulmao02">Outra</string>
+	<string name="CbPulmao03">Não sabe</string>
+	
+	<!-- TEXT VIEW ABA 4 -->
+	<string name="CidSituRua">Está em Situação de rua?*</string>
+	<string name="CidTempoRua">Tempo em situação de rua?</string>
+	<string name="CidBeneficio">Recebe algum benefício?</string>
+	<string name="CidReferencia">Possui referência familiar</string>
+	<string name="CidAlimento">Quantas vezes se alimenta ao dia?</string>
+	<string name="CidOrigem">Qual a origem da alimentação?</string>
+	<string name="CidInstituicao">É acompanhado por outra instituição?</string>
+	<string name="CidInstituicaoQual">Se sim, indique qual(is)</string>
+	<string name="CidVisita">Visita algum familiar com frequência?</string>
+	<string name="CidVisitaQual">Se sim qual é o grupo parentesco?</string>
+	<string name="CidHigiene">Tem acesso à higiene pessoal?</string>
+	<string name="CidHigieneQual">Se sim, indique qual(is)**</string>
+	
+	<!-- RADIO BUTTON ABA 4 -->
+	<string name="RbSitRua01">Sim</string>
+	<string name="RbSitRua02">Não</string>
+
+	<string name="RbTempRua01">Menor que 6 meses</string>
+	<string name="RbTempRua02">6 a 12 meses</string>
+	<string name="RbTempRua03">1 a 5 anos</string>
+	<string name="RbTempRua04">Maior 5 anos</string>
+	
+	<string name="RbBene01">Sim</string>
+	<string name="RbBene02">Não</string>
+
+	<string name="RbReferencia01">Sim</string>
+	<string name="RbReferencia02">Não</string>
+
+	<string name="RbInstituicao01">Sim</string>
+	<string name="RbInstituicao02">Não</string>
+
+	<string name="RbVisita01">Sim</string>
+	<string name="RbVisita02">Não</string>
+		
+	<string name="RbHigiene01">Sim</string>
+	<string name="RbHigiene02">Não</string>
+				
+	<string name="RbAlimenta01">1 vez</string>
+	<string name="RbAlimenta02">2 ou 3 vezes</string>
+	<string name="RbAlimenta03">Mais de 3 vezes</string>
+	
+	<!-- CHECK BOX ABA 4 -->
+	<string name="CbAlimento01">Restaurante popular</string>
+	<string name="CbAlimento02">Doação grupo religioso</string>
+	<string name="CbAlimento03">Doação restaurante</string>
+	<string name="CbAlimento04">Doação de popular</string>
+	<string name="CbAlimento05">Outras</string>
+
+	<string name="CbHigiene01">Banho</string>
+	<string name="CbHigiene02">Acesso ao sanitário</string>
+	<string name="CbHigiene03">Higiene Bucal</string>
+	<string name="CbHigiene04">Outras</string>							
+
+	<!-- TEXT VIEW ABA 2 DOMICILIO-->	
+	<string name="MoraSit">Situação de moradia/posse de terra*</string>							
+	<string name="MoraLocalizacao">Localização*</string>	
+	<string name="MoraDomicilio">Tipo de domicílio*</string>
+	<string name="MoraNum">Nº de moradores</string>
+	<string name="MoraComodos">Nº de comodos</string>
+	<string name="MoraAcesso">Tipo de acesso ao domicílio</string>
+	<string name="MoraEnergia">Disponibilidade de energia elétrica?</string>
+	<string name="MoraRural">Em caso de área de produção rural: Condição de posse e uso da terra</string>
+	<string name="MoraMaterial">Material predominante na construção de paredes externas do seu domicílio</string>
+	<string name="MoraAlvenaria">Alvenaria/Tijolo</string>
+	<string name="MoraTaipa">Taipa</string>
+	<string name="MoraOutros">Outros</string>
+	<string name="MoraAbastecimento">Abastecimento de água</string>
+	<string name="MoraEscoamento">Forma de escoamento do banheiro ou sanitário</string>
+	<string name="MoraConsumo">Água para consumo no domicílio</string>
+	<string name="MoraLixo">Destino do lixo</string>
+	<string name="MoraAnimais">Animais no domicílio?</string>
+	<string name="MoraAnimaisQual">Qual(is)</string>
+	<string name="MoraAnimaisQtd">Quantos</string>
+	
+	<!-- RADIO BUTTON ABA 2 DOMICILIO-->
+	<string name="RbMoradia01">Próprio</string>
+	<string name="RbMoradia02">Financiado</string>
+	<string name="RbMoradia03">Alugado</string>
+	<string name="RbMoradia04">Arrendado</string>
+	<string name="RbMoradia05">Cedido</string>
+	<string name="RbMoradia06">Ocupação</string>
+	<string name="RbMoradia07">Situação de rua</string>
+	<string name="RbMoradia08">Outra</string>												
+
+	<string name="RbLocalizacao01">Urbana</string>												
+	<string name="RbLocalizacao02">Rural</string>												
+
+	<string name="RbDomicilio01">Casa</string>												
+	<string name="RbDomicilio02">Apartamento</string>												
+	<string name="RbDomicilio03">Cômodo</string>												
+	<string name="RbDomicilio04">Outro</string>			
+
+	<string name="RbAcesso01">Pavimento</string>												
+	<string name="RbAcesso02">Chão batido</string>												
+	<string name="RbAcesso03">Fluvial</string>												
+	<string name="RbAcesso04">Outro</string>			
+
+	<string name="RbEnergia01">Sim</string>												
+	<string name="RbEnergia02">Não</string>												
+
+	<string name="RbRural01">Proprietário</string>												
+	<string name="RbRural02">Parceiro(a)/meeiro(a)</string>												
+	<string name="RbRural03">Assentado(a)</string>												
+	<string name="RbRural04">Posseiro</string>
+	<string name="RbRural05">Arrendatário(a)</string>
+	<string name="RbRural06">Comodatário(a)</string>												
+	<string name="RbRural07">Beneficiário(a) do banco de terra</string>												
+	<string name="RbRural08">Não se aplica</string>												
+
+	<string name="RbAlvenaria01">Com revestimento</string>												
+	<string name="RbAlvenaria02">Sem revestimento</string>												
+	
+	<string name="RbTaipa01">Com revestimento</string>												
+	<string name="RbTaipa02">Sem revestimento</string>
+	
+	<string name="RbOutros01">Madeira Aparelhada</string>
+	<string name="RbOutros02">Madeira Aproveitado</string>												
+	<string name="RbOutros03">Palha</string>												
+	<string name="RbOutros04">Outro Material</string>													
+		
+	<string name="RbAbastecimento01">Rede encanada até o domicílio</string>												
+	<string name="RbAbastecimento02">Carro pipa</string>												
+	<string name="RbAbastecimento03">Poço/nascente no domicílio</string>												
+	<string name="RbAbastecimento04">Cisterna</string>
+	<string name="RbAbastecimento05">Outro</string>
+
+	<string name="RbConsumo01">Filtrada</string>												
+	<string name="RbConsumo02">Fervida</string>												
+	<string name="RbConsumo03">Clorada</string>												
+	<string name="RbConsumo04">Mineral</string>
+	<string name="RbConsumo05">Sem tratamento</string>
+				
+	<string name="RbLixo01">Coletado</string>												
+	<string name="RbLixo02">Queimado/Enterrado</string>												
+	<string name="RbLixo03">Céu Aberto</string>												
+	<string name="RbLixo04">Outro</string>
+
+	<string name="RbEscoamento01">Rede coletora de esgoto ou pluvial</string>												
+	<string name="RbEscoamento02">Fossa séptica</string>												
+	<string name="RbEscoamento03">Direto para um rio, lago ou mar</string>												
+	<string name="RbEscoamento04">Céu aberto</string>
+	<string name="RbEscoamento05">Fossa rudimentar</string>
+	<string name="RbEscoamento06">Outra forma</string>
+	
+	<string name="RbAnimais01">Sim</string>												
+	<string name="RbAnimais02">Não</string>
+	
+	<!-- CHECK BOX ABA2 DOMICILIO-->
+	<string name="CbAnimais01">Gato</string>												
+	<string name="CbAnimais02">Cachorro</string>
+	<string name="CbAnimais03">Pássaro</string>												
+	<string name="CbAnimais04">Outros</string>
+	
+	<!-- TEXT VIEW ABA 3 DOMICILIO-->	
+	<string name="FamiFamilia">Familia</string>	
+	<string name="FamiProntuario">Nº do prontuário familiar</string>												
+	<string name="FamiCNS">CNS do responsável</string>
+	<string name="FamiData">Data de nascimento do responsável</string>												
+	<string name="FamiRenda">Renda Familiar(Sal. Mínimo)</string>
+	<string name="FamiMenbros">Número de membros da familia</string>
+	<string name="FamiReside">Reside desde (Mês/Ano)</string>
+	<string name="FamiMudou">Mudou-se</string>
+	
+	<!-- RADIO BUTTON ABA 3 DOMICILIO -->
+	<string name="RbFamiliaRenda01">1/4</string>
+	<string name="RbFamiliaRenda02">1/2</string>
+	<string name="RbFamiliaRenda03">1</string>
+	<string name="RbFamiliaRenda04">2</string>
+	<string name="RbFamiliaRenda05">3</string>
+	<string name="RbFamiliaRenda06">4</string>
+	<string name="RbFamiliaRenda07">4+</string>
+	
+	<!-- TEXT VIEW ABA 4 DOMICILIO -->
+	<string name="TermoRecusa">Termo de Recusa do Cadastro Domiciliar da Atenção Básica</string>
+	<string name="TermoRecusaInstituicao">Termo de Recusa da Instituição de Permanência</string>
+	<string name="InstPerma">Nome da Instituição de permanência</string>
+	<string name="InstPermaVinculados">Existem outros profissionais de saúde vinculados à instituição (não inclui profissionais da rede pública de saúde)?</string>
+	<string name="InstPermaIdentificacao">Identificação do responsável técnico da instituição da permanência</string>
+	<string name="InstPermaNome">Nome</string>
+	<string name="InstPermaCNS">CNS do responsável</string>
+	<string name="InstPermaInstituicao">Cargo na instituição</string>
+	<string name="InstPermaTel">Tel. Contato</string>
+	
+	<!-- RADIO BUTTON ABA 4 DOMICILIO -->
+	<string name="RbTermoRecusa">Usuário recusou o cadastro por meio do Termo de Recusa do Cadastro</string>
+	<string name="RbTermoRecusaInstituicao">Usuário recusou por meio do Termo de Recusa da Instituição de Permanência</string>
+	<string name="RbTermoRecusaInstituicao01">Sim</string>
+	<string name="RbTermoRecusaInstituicao02">Não</string>	
+				
 	<string-array name="tipoImovel">
 	    <item>Selecione</item>
     	<item>01 - Domicílio</item>

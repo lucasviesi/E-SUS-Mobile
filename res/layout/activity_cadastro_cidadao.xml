@@ -25,7 +25,8 @@
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center" >
+                android:gravity="center"
+                android:textAlignment="center">
 
             </TabWidget>
 
@@ -34,14 +35,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
 
-                <LinearLayout
+                <!-- COMEÇO DA ABA 1 -->
+                <LinearLayout 
                     android:id="@+id/tab1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal" >
 
                     <ScrollView
-                        android:id="@+id/scroll_Aba1"
+                        android:id="@+id/scroll_Aba_1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -51,7 +53,7 @@
                         android:paddingRight="@dimen/activity_horizontal_margin" >
 				
 				        <!-- INICIO do Indentificação do Usuário/Cidadão -->
-				        <LinearLayout
+				       <LinearLayout
 						android:id="@+id/ll_identificacaoCid"                	
 		                android:layout_width="match_parent"
 		                android:layout_height="wrap_content"
@@ -77,10 +79,12 @@
 					        android:textSize="@dimen/FVD_Titulo" />
 		
 		                <TextView
+		                    android:id="@+id/tv_CNS"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/CNS"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/CNS" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 
 		                <EditText
 		                    android:id="@+id/ED_Cns"
@@ -88,39 +92,69 @@
 		                    android:layout_height="match_parent"
 		                    android:layout_marginBottom="20dp"
 		                    android:inputType="number" 
-		                    android:maxLength="15"/>
+		                    android:maxLength="15"
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>
 		                
 		                <TextView
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
 		                    android:text="@string/RespFam"
-		                    android:textSize="@dimen/FVD_Normal" />
-		
-		                <Spinner
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>								             
+			            	
+			            <RadioGroup
+			                android:id="@+id/RadioButtonResponsavel"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+								
+			           	    <RadioButton  
+								android:id="@+id/Responsavel01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbResponsavel01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Responsavel02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbResponsavel02"
+								android:focusable="true"
+    							android:focusableInTouchMode="true"/>				
+			            </RadioGroup>
+		                
+		                <!-- <Spinner
 		                    android:id = "@+id/spinner_RespFamiliar"
 		                    android:layout_width="fill_parent"
 		                    android:layout_height="match_parent" 
-		                    android:layout_marginBottom="20dp" />
+		                    android:layout_marginBottom="20dp" />-->
 		                
 		                <TextView
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
 		                    android:text="@string/CnsResp"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_CnsRespFam"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="match_parent"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="text" />
+		                    android:inputType="text" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>
 		                
 		                <TextView
                             android:id="@+id/tv_CodMicroArea"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="@string/NumMicroArea"
-                            android:textSize="@dimen/FVD_Normal" />
+                            android:textSize="17sp"
+                            android:textStyle="bold"/>
 		                
 		                <EditText
                             android:id="@+id/ed_NumMicroArea"
@@ -130,192 +164,359 @@
                             android:gravity="center"
                             android:layout_marginBottom="20dp"
                             android:textSize="@dimen/FVD_Minusculo1"
-                            android:maxLength="2" />
+                            android:maxLength="2"
+                            android:focusable="true"
+    						android:focusableInTouchMode="true" 
+                            />
 		
 		                <TextView
+		                    android:id="@+id/tv_NomeComp"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/NomeComp"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/NomeComp"		                     
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_NomeComp"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="text" />
+		                    android:inputType="text" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>
 		
 		                <TextView
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/NomeSocial"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/NomeSocial" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_NomeSocial"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="text" />
+		                    android:inputType="text" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>
 		                
 		                <TextView
+		                    android:id="@+id/tv_DtNasc"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/dtNasc"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/dtNasc" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_DtNasc"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="date" />
+		                    android:inputType="date" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>
 
 		                <TextView
+		                    android:id="@+id/tv_Sexo"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
 		                    android:text="@string/SexoCid"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		                
-		                <Spinner
+		                <RadioGroup
+			                android:id="@+id/RadioButtonSexo"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+								
+			           	    <RadioButton  
+								android:id="@+id/Sexo01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbSexo01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Sexo02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbSexo02"
+								android:focusable="true"
+    							android:focusableInTouchMode="true"/>				
+			            </RadioGroup>
+		                
+		                <!--  <Spinner
 		                    android:id="@+id/spinner_Sexo"
 		                   	android:layout_width="fill_parent"
 		                    android:layout_height="wrap_content"
-		                    android:layout_marginBottom="20dp" />
+		                    android:layout_marginBottom="20dp" />-->
 		                
 		                <TextView
+		                    android:id="@+id/tv_RacaCor"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/RacaCor"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/RacaCor" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		                
-		                <Spinner
+		                <RadioGroup
+			                android:id="@+id/RadioButtonCor"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+								
+			           	    <RadioButton  
+								android:id="@+id/Cor01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbCor01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Cor02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbCor02"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Cor03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbCor03"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Cor04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbCor04"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Cor05"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbCor05"
+								android:focusable="true"
+    							android:focusableInTouchMode="true"/>				
+			            </RadioGroup>
+		                
+		                <!-- <Spinner
 		                    android:id="@+id/spinner_RacaCor"
 		                   	android:layout_width="fill_parent"
 		                    android:layout_height="wrap_content"
-		                    android:layout_marginBottom="20dp" />
+		                    android:layout_marginBottom="20dp" />-->
 		                
 		                <TextView
+		                    android:id="@+id/tv_Etnia"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/Etnia"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/Etnia" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_Etnia"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="none" />		
+		                    android:inputType="none" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>		
 		                    
 		                <TextView
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/Nis"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/Nis" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_Nis"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="none" />	
+		                    android:inputType="none" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>	
 		                    
 		                <TextView
+		                    android:id="@+id/tv_NomeMae"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
 		                    android:text="@string/NomeMae"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:textSize="17sp" 
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_NomeMae"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="text" />	
+		                    android:inputType="text" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>	
 		                   
 		                <TextView
+		                    android:id="@+id/tv_NomePai"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/NomePai"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/NomePai" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_NomePai"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="text" />		
+		                    android:inputType="text" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>		
 		                    
 		                <TextView
+		                    android:id="@+id/tv_Nacionalidade"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/Nacionalidade"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/Nacionalidade" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		                
-		                <Spinner
+		                <RadioGroup
+			                android:id="@+id/RadioButtonNacionalidade"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content" 
+			                android:layout_marginBottom="15dp">
+								
+			           	    <RadioButton  
+								android:id="@+id/Nacionalidade01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbNacionalidade01"/>
+			            	    
+		            	    <RadioButton  
+								android:id="@+id/Nacionalidade02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbNacionalidade02"/>
+		            	    
+		            	    <RadioButton  
+								android:id="@+id/Nacionalidade03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:checked="false"
+								android:text="@string/RbNacionalidade03"
+								android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+		            	    		            	   				
+			            </RadioGroup>
+		                
+		                <!-- <Spinner
 		                    android:id="@+id/spinner_Nacionalidade"
 		                   	android:layout_width="fill_parent"
 		                    android:layout_height="wrap_content"
-		                    android:layout_marginBottom="20dp" />
-		                
+		                    android:layout_marginBottom="20dp" />-->
+		                    
 		                <TextView
+		                    android:id="@+id/tv_PaisNasc"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/DtNaturalizacao"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="País de Nascimento**" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
+		                
+		                <EditText
+		                    android:id="@+id/ED_PaisOrigem"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="wrap_content"
+		                    android:layout_marginBottom="20dp"
+		                    android:inputType="text" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>	
+		                
+		                <TextView
+		                    android:id="@+id/tv_DtNaturalizacao"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:text="@string/DtNaturalizacao" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_DtNaturalizacao"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="date" />		 
+		                    android:inputType="date" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>		 
 		                    
 		                <TextView
+		                    android:id="@+id/tv_PortNaturalizacao"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/PortNaturalizacao"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/PortNaturalizacao" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_PortNaturalizacao"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="none" />		
+		                    android:inputType="none" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>		
 		                    
 		                <TextView
+		                    android:id="@+id/tv_MunUFNasc"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
 		                    android:text="@string/MunUFNasc"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
-		                <EditText
+		                <EditText		            
 		                    android:id="@+id/ED_MunUFNasc"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="none" />	
+		                    android:inputType="none" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>	
 		                    
 		                <TextView
+		                    android:id="@+id/tv_DtEntBr"
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/DtEntBr"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/DtEntBr" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_DtEntBr"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
-		                    android:inputType="date" />	
+		                    android:inputType="date" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>	
 		                    
 		                <TextView
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/Celular"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/Celular" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_Celular"
@@ -323,21 +524,27 @@
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="20dp"
 		                    android:inputType="phone"
-		                    android:maxLength="12" />	
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>	
 		                    
 		                <TextView
 		                    android:layout_width="wrap_content"
 		                    android:layout_height="wrap_content"
-		                    android:text="@string/Email"
-		                    android:textSize="@dimen/FVD_Normal" />
+		                    android:text="@string/Email" 
+		                    android:textSize="17sp"
+		                    android:textStyle="bold"/>
 		
 		                <EditText
 		                    android:id="@+id/ED_Email"
 		                    android:layout_width="match_parent"
 		                    android:layout_height="wrap_content"
 		                    android:layout_marginBottom="40dp"
-		                    android:inputType="textEmailAddress" />
+		                    android:inputType="textEmailAddress" 
+		                    android:focusable="true"
+    						android:focusableInTouchMode="true"/>
 		                
+		                
+		                <!--  -->
 		                <TextView
 			            	android:layout_width="match_parent"
 			            	android:layout_height="wrap_content"
@@ -348,19 +555,20 @@
 			            	android:layout_width="match_parent"
 			            	android:layout_height="wrap_content"
 			            	android:layout_marginBottom="5dp"
-			            	android:text="@string/infoCampo2CadCid" />		                          
+			            	android:text="@string/infoCampo2CadCid"/>		                          
 		            </LinearLayout>
 		            <!-- FIM Endereço/Local de Permanência -->
 				    </ScrollView>
-                </LinearLayout>
+                </LinearLayout><!-- FIM DA ABA 1 -->
                 
+                <!-- COMEÇO DA ABA 2 -->
                 <LinearLayout
                     android:id="@+id/tab2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal" >
                     <ScrollView
-                        android:id="@+id/scroll_Aba2"
+                        android:id="@+id/scroll_Aba_2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -379,28 +587,892 @@
 			                android:paddingBottom="@dimen/GroupMarginVertical"
 			                android:paddingLeft="@dimen/activity_horizontal_margin"
 			                android:paddingRight="@dimen/activity_horizontal_margin"
-			                android:paddingTop="@dimen/GroupMarginVertical" >	    
+			                android:paddingTop="@dimen/GroupMarginVertical" >	
+			                    
 			                <TextView
 						        android:id="@+id/TV_TituloAba2"
 						        android:layout_width="match_parent"
 						        android:layout_height="wrap_content"
 						        android:layout_marginTop="5dp"
-						        android:layout_marginBottom="20dp"
+						        android:layout_marginBottom="20dp"						       
 						        android:background="@drawable/textview_border"
 						        android:gravity="center"
 						        android:radius="5dp"
 						        android:text="@string/infoSocioDem"
 						        android:textColor="@color/white"
-						        android:textSize="@dimen/FVD_Titulo" />
+						        android:textSize="@dimen/FVD_Titulo" 
+						        android:focusable="true"
+    							android:focusableInTouchMode="true"/>
 			                
-			                <ProgressBar
+			                <TextView
+			                    android:id="@+id/tv_Parentesco"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textSize="17sp"
+				            	android:textStyle="bold"
+				            	android:text="@string/RbParentesco"
+				            	android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonParentesco"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+			                    
+								<RadioButton  
+									android:id="@+id/RbParen01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen01"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>			               		
+			                    
+								<RadioButton  
+									android:id="@+id/RbParen02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen02"/>			               		
+																
+								<RadioButton  
+									android:id="@+id/RbParen03"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen03"/>			               		
+
+								<RadioButton  
+									android:id="@+id/RbParen04"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen04"/>			               		
+								
+								<RadioButton  
+									android:id="@+id/RbParen05"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen05"/>			               		
+
+								<RadioButton  
+									android:id="@+id/RbParen06"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen06"/>			               		
+								
+								<RadioButton  
+									android:id="@+id/RbParen07"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen07"/>			               		
+																
+								<RadioButton 
+									android:id="@+id/RbParen08"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen08"/>			               		
+
+								<RadioButton  
+									android:id="@+id/RbParen09"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen09"/>			               		
+								
+								<RadioButton  
+									android:id="@+id/RbParen10"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbParen10"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>			               																																										
+			                </RadioGroup>
+			                
+			            	<TextView
+			            	    android:id="@+id/tv_InfoOcupacao"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoOcupacao"
+				            	android:textSize="17sp"/>
+			            	
+			            	<EditText
+			                    android:id="@+id/ED_Ocupacao"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:inputType="text" />
+			            	
+			            	<TextView
+			            	    android:id="@+id/tv_InfoFrequenta"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoFrequenta"
+				            	android:textSize="17sp"
+				            	android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+			            	
+			            	<RadioGroup
+			                    android:id="@+id/RadioButtonOcupacao"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+								
+			            	    <RadioButton  
+									android:id="@+id/RbFreq01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbFreq01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbFreq02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbFreq02"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>				
+			            	</RadioGroup>
+			            	
+			            	<TextView
+			            	    android:id="@+id/tv_InfoCurso"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="2dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoCurso"
+				            	android:textSize="17sp"/>
+			            	
+			            	<RadioGroup
+			                    android:id="@+id/RadioButtonCurso"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+								
+			            	    <RadioButton  
+									android:id="@+id/RbCurso01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso02"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso03"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso03"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso04"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso04"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso05"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso05"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso06"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso06"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso07"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso07"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso08"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso08"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso09"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso09"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso10"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso10"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso11"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso11"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso12"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso12"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso13"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso13"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso14"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso14"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbCurso15"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCurso15"/>
+			            	    
+			            	</RadioGroup>
+			            	
+			            	<TextView
+			            	    android:id="@+id/tv_Infotrabalho"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoTrabalho"
+				            	android:textSize="17sp"/>
+			            
+			            	<RadioGroup
+			                    android:id="@+id/RadioButtonTrabalho"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+								
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho02"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho03"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho03"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho04"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho04"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho05"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho05"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho06"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho06"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho07"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho07"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho08"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho08"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho09"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho09"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbTrabalho10"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTrabalho10"/>
+			        
+			            	</RadioGroup>
+			            	
+			            	<TextView
+			            	    android:id="@+id/tv_InfoCriancaFica"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoCriancaFica"
+				            	android:textSize="17sp"/>
+			            	    
+			            	    <CheckBox android:id="@+id/CbAdultResp"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/Cri01"
+							        android:enabled="true"/>
+							    
+							    <CheckBox android:id="@+id/CbOutraCri"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/Cri02"
+							        android:enabled="true"/>
+							    
+							    <CheckBox android:id="@+id/CbAdolescente"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/Cri03"
+							        android:enabled="true"/>
+							    
+							    <CheckBox android:id="@+id/CbSozinha"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/Cri04"
+							        android:enabled="true"/>
+							    
+							    <CheckBox android:id="@+id/CbCreche"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/Cri05"
+							        android:enabled="true"/>
+							    
+							    <CheckBox android:id="@+id/CbOutro"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:text="@string/Cri06"
+							        android:enabled="true"/>
+							    
+						  	<TextView
+						  	    android:id="@+id/tv_InfoCuidador"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoFreqCuidador"
+				            	android:textSize="17sp"/>
+							  	
+						  	<RadioGroup
+			                    android:id="@+id/RadioButtonFreqCuidador"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/FreqCuid01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbFreqCuid02"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/FreqCuid02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbFreqCuid02"/>				
+			            	</RadioGroup>
+			            	
+							<TextView
+							    android:id="@+id/tv_InfoGrupoComu"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoGrupoComu"
+				            	android:textSize="17sp"/>
+							
+							<RadioGroup
+			                    android:id="@+id/RadioButtonGrupoComunitario"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Grupo01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbGrupo01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/RbGrupo02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbGrupo02"/>				
+			            	</RadioGroup>
+			            	
+							<TextView
+							    android:id="@+id/tv_InfoPlanoSaude"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoPlanoSaude"
+				            	android:textSize="17sp"/>
+							
+							<RadioGroup
+			                    android:id="@+id/RadioButtonPlanoSaude"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/PlanoSaude01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPlanoSaude01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/PlanoSaude02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPlanoSaude02"/>				
+			            	</RadioGroup>
+			            	
+								<TextView
+								    android:id="@+id/tv_InfoPovoComu"
+					            	android:layout_width="match_parent"
+					            	android:layout_height="wrap_content"
+					            	android:layout_marginBottom="5dp"
+					            	android:textStyle="bold"
+					            	android:text="@string/InfoPovoComu"
+					            	android:textSize="17sp"/>
+								
+								<RadioGroup
+				                    android:id="@+id/RadioButtonPovoMembro"
+				                    android:layout_width="wrap_content"
+				                    android:layout_height="wrap_content" 
+				                    android:layout_marginBottom="15dp">
+											
+				            	    <RadioButton  
+										android:id="@+id/ComuTradi01"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:checked="false"
+										android:text="@string/RbComuTradi01"/>
+				            	    
+				            	    <RadioButton  
+										android:id="@+id/ComuTradi02"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:checked="false"
+										android:text="@string/RbComuTradi02"/>				
+				            	</RadioGroup>
+			            	
+							<TextView
+							    android:id="@+id/tv_InfoPovoComuQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/InfoPovoComuQual"
+					          	android:enabled="false"
+					           	android:textSize="17sp"/>
+							
+							<EditText
+			                    android:id="@+id/ED_PovoComuTradi"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:enabled="false"
+			                    android:inputType="text" />
+							
+							<TextView
+							    android:id="@+id/tv_InfoOriSexual"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoOriSexual"
+				            	android:textSize="17sp"/>
+						
+							<RadioGroup
+			                    android:id="@+id/RadioButtonOriSexual"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp"
+			                    android:enabled="true">
+										
+			            	    <RadioButton  
+									android:id="@+id/OriSexual01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbOriSexual01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/OriSexual02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbOriSexual02"/>				
+			            	</RadioGroup>
+			            	
+							<TextView
+							    android:id="@+id/tv_InfoOriSexualQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					           	android:enabled="false"
+					          	android:text="@string/InfoOriSexualQual"
+					           	android:textSize="17sp"/>
+							
+							<RadioGroup
+			                    android:id="@+id/RadioButtonOriSexualQual"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp"
+			                    android:enabled="true">
+										
+			            	    <RadioButton  
+									android:id="@+id/OriSexualQual01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:enabled="false"
+									android:text="@string/RbOriSexualQual01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/OriSexualQual02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:enabled="false"
+									android:text="@string/RbOriSexualQual02"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/OriSexualQual03"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:enabled="false"
+									android:text="@string/RbOriSexualQual03"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/OriSexualQual04"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:enabled="false"
+									android:text="@string/RbOriSexualQual04"/>				
+			            	</RadioGroup>
+							
+							<TextView
+							    android:id="@+id/tv_InfoGenero"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:enabled="true"
+				            	android:text="@string/InfoGenero"
+				            	android:textSize="17sp"/>
+						
+							<RadioGroup
+			                    android:id="@+id/RadioButtonGenero"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp"
+			                    android:enabled="true">
+										
+			            	    <RadioButton  
+									android:id="@+id/OriGenero01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbGenero01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/OriGenero02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbGenero02"/>				
+			            	</RadioGroup>
+			            	
+							<TextView
+							    android:id="@+id/tv_GeneroQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					           	android:enabled="false"
+					          	android:text="@string/InfoGeneroQual"
+					           	android:textSize="17sp"/>
+							
+							<RadioGroup
+			                    android:id="@+id/RadioButtonGeneroQual"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/GeneroQual01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:enabled="false"
+									android:text="@string/RbGeneroQual01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/GeneroQual02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:enabled="false"
+									android:text="@string/RbGeneroQual02"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/GeneroQual03"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:enabled="false"
+									android:text="@string/RbGeneroQual03"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/GeneroQual04"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:enabled="false"
+									android:text="@string/RbGeneroQual04"/>				
+			            	</RadioGroup>
+			            	
+							<TextView
+							    android:id="@+id/tv_InfoDeficiencia"
+				            	android:layout_width="match_parent"
+				            	android:layout_height="wrap_content"
+				            	android:layout_marginBottom="5dp"
+				            	android:textStyle="bold"
+				            	android:text="@string/InfoDeficiencia"
+				            	android:textSize="17sp"/>
+						
+							<RadioGroup
+			                    android:id="@+id/RadioButtonInfoDeficiencia"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp"
+			                    android:focusable="true"
+    							android:focusableInTouchMode="true">
+										
+			            	    <RadioButton  
+									android:id="@+id/InfoDeficiencia01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDeficiencia01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/OriInfoDeficiencia02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDeficiencia02"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>				
+			            	</RadioGroup>
+			            	
+							<TextView
+							    android:id="@+id/tv_InfoDeficienciaQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					           	android:enabled="false"
+					          	android:text="@string/InfoDeficienciaQual"
+					           	android:textSize="17sp"/>
+		                	
+		                	<CheckBox android:id="@+id/CbAuditiva"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:text="@string/RbDeficienciaQual01"
+							    android:enabled="false"/>
+							    
+						    <CheckBox android:id="@+id/CbIntelecto"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/RbDeficienciaQual02"
+						        android:enabled="false"/>
+						    
+						    <CheckBox android:id="@+id/CbVisual"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/RbDeficienciaQual03"
+						        android:enabled="false"/>
+						    
+						    <CheckBox android:id="@+id/CbFisica"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/RbDeficienciaQual04"
+						        android:enabled="false"/>
+						    
+						    <CheckBox android:id="@+id/CbOutraDef"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/RbDeficienciaQual05"
+						        android:enabled="false"/>
+							
+						    <TextView
+						        android:id="@+id/tv_InfoSaidaCidadao"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/InfoSaidaCidadao"
+					           	android:textSize="20sp"
+					           	android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    
+						    <RadioGroup
+			                    android:id="@+id/RadioButtonSaidaCidadao"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/SaidaCid01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbSaidaCid01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/SaidaCid02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbSaidaCid02"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>				
+			            	</RadioGroup>
+						    
+						    <TextView
+						        android:id="@+id/tv_InfoSaidaCidadaoQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					           	android:enabled="false"
+					           	android:background="@drawable/borderbottom"					         
+					          	android:text="@string/InfoSaidaCidadaoQual"
+					           	android:textSize="17sp"
+					           	android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    
+						    <TextView
+						        android:id="@+id/tv_InfoDtObito"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					           	android:enabled="false"
+					          	android:text="@string/InfoDtObito"
+					           	android:textSize="17sp"
+					           	android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    
+						    <EditText
+			                    android:id="@+id/ED_DataObito"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:enabled="false"
+			                    android:inputType="date" 
+			                    android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    
+						    <TextView
+						        android:id="@+id/tv_NumeroDO"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					           	android:enabled="false"
+					          	android:text="@string/InfoEdNumeroDO"
+					           	android:textSize="17sp" 
+					           	android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    
+						    <EditText
+			                    android:id="@+id/ED_NumeroDO"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:enabled="false"
+			                    android:inputType="date"/>
+						    
+							<!--  -->
+							<!--<ProgressBar
 		                    	android:id="@+id/PB_aba2"
 		                    	style="?android:attr/progressBarStyleLarge"
 		                    	android:layout_marginBottom="20dp"
 		                    	android:layout_width="match_parent"
-		                    	android:layout_height="match_parent" />
-			                 
-		                	<TextView
+		                    	android:layout_height="match_parent" /> -->
+			                    
+							
+							<TextView
 				            	android:layout_width="match_parent"
 				            	android:layout_height="wrap_content"
 				            	android:layout_marginBottom="5dp"
@@ -411,19 +1483,20 @@
 				            	android:layout_height="wrap_content"
 				            	android:layout_marginBottom="5dp"
 				            	android:text="@string/infoCampo2CadCid" />
-						        
+							    
 			            </LinearLayout>
 			            <!-- FIM das Informações Sociodemorgráficas -->
 				    </ScrollView>
-                </LinearLayout>
+                </LinearLayout><!-- FIM DA ABA 2 -->
                 
+                <!-- COMEÇO DA ABA 3 -->
                 <LinearLayout
                     android:id="@+id/tab3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal" >
                     <ScrollView
-                    	android:id="@+id/scroll_Aba3"
+                    	android:id="@+id/scroll_Aba_3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -442,7 +1515,8 @@
 			                android:paddingBottom="@dimen/GroupMarginVertical"
 			                android:paddingLeft="@dimen/activity_horizontal_margin"
 			                android:paddingRight="@dimen/activity_horizontal_margin"
-			                android:paddingTop="@dimen/GroupMarginVertical" >	    
+			                android:paddingTop="@dimen/GroupMarginVertical" >
+		                		    
 			                <TextView
 						        android:id="@+id/TV_TituloAba3"
 						        android:layout_width="match_parent"
@@ -456,13 +1530,844 @@
 						        android:textColor="@color/white"
 						        android:textSize="@dimen/FVD_Titulo" />
 			                
-			                <ProgressBar
-		                    	android:id="@+id/PB_aba3"
-		                    	style="?android:attr/progressBarStyleLarge"
-		                    	android:layout_marginBottom="20dp"
-		                    	android:layout_width="match_parent"
-		                    	android:layout_height="match_parent" />
-			                 
+			                <TextView
+			                    android:id="@+id/TV_Gestante"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestGestante"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonGestante"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="5dp">
+							
+			            	    <RadioButton  
+									android:id="@+id/Gestante01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbGestante01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Gestante02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbGestante02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/TV_GestanteQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestGestanteQual"
+					           	android:textSize="17sp" 
+					           	android:enabled="false"/>
+						    
+						    <EditText
+			                    android:id="@+id/ED_GestanteQual"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:maxLength="9"
+			                    android:inputType="date"
+			                    android:enabled="false"/>
+			            	
+			                <TextView
+			                    android:id="@+id/TV_Peso"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestPeso"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonPeso"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Peso01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPeso01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Peso02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPeso02"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Peso03"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPeso03"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/TV_Fumante"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestFumante"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonFumante"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Fumante01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbFumante01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Fumante02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbFumante02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/TV_Alcool"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestAlcool"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonAlcool"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Alcool01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbAlcool01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Alcool02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbAlcool02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/TV_Droga"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestDroga"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonDroga"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Droga01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDrogas01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Drogas02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDrogas02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/TV_Hipertensao"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestHipertensao"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonHipertensao"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Hipertensao01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbHipertensao01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Hipertensao02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbHipertensao02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestDiabetes"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonDiabetes"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Diabetes01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDiabetes01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Diabetes02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDiabetes02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestAVC"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonAVC"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/AVC01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbAVC01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/AVC02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbAVC02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestInfarto"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonInfarto"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Infarto01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbInfarto01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Infarto02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbInfarto02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestCardiaca"
+					           	android:textSize="17sp"/>
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonCardiaca"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Cardiaca01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCardiaca01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Cardiaca02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCardiaca02"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/tv_Cardiaca"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestCardiacaQual"
+					           	android:textSize="17sp"
+					           	android:enabled="false"/>
+		                	
+		                	<CheckBox android:id="@+id/InsufCard"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:text="@string/CbCardiaca01"
+							    android:enabled="false"/>
+							    
+						    <CheckBox android:id="@+id/CardOutra"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbCardiaca02"
+						        android:enabled="false"/>
+						    
+						    <CheckBox android:id="@+id/CardNSabe"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbCardiaca03"
+						        android:enabled="false"
+						        android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestRim"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonRim"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Rim01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbRim01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Rim02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbRim02"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/tv_RimQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestRimQual"
+					           	android:textSize="17sp"
+					           	android:enabled="false"/>
+		                	
+		                	<CheckBox android:id="@+id/RimInsufCard"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:text="@string/CbRim01"
+							    android:enabled="false"/>
+							    
+						    <CheckBox android:id="@+id/RimOutra"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbRim02"
+						        android:enabled="false"/>
+						    
+						    <CheckBox android:id="@+id/RimNSabe"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbRim03"
+						        android:enabled="false"
+						        android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestRespiratoria"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonRespiratoria"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Respiratoria01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPulmao01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Respiratoria02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPulmao02"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/tv_RespiratoriaQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestRespiratoriaQual"
+					           	android:textSize="17sp"
+					           	android:enabled="false"/>
+		                	
+		                	<CheckBox android:id="@+id/PulmaoInsufCard"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:text="@string/CbPulmao01"
+							    android:enabled="false"/>
+							    
+						    <CheckBox android:id="@+id/PulmaoOutra"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbPulmao02"
+						        android:enabled="false"/>
+						    
+						    <CheckBox android:id="@+id/PulmaoNSabe"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbPulmao03"
+						        android:enabled="false"
+						        android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestHanseniase"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonHanseniase"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Hanseniase01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/Rbhanseniase01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Hanseniase02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbHanseniase02"/>				
+			            	</RadioGroup>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestTuberculose"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonTuberculose"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Tuberculose01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTuberculose01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Tuberculose02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTuberculose02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestCancer"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonCancer"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Cancer01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCancer01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Cancer02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbCancer02"/>				
+			            	</RadioGroup>
+
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestInternacao"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonInternacao"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Internacao01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbInternacao01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Internacao02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbInternacao02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/tv_InternacaoQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestInternacaoQual"
+					           	android:textSize="17sp" 
+					           	android:enabled="false"/>
+						    
+						    <EditText
+			                    android:id="@+id/ED_Internacao"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:maxLength="9"
+			                    android:enabled="false"
+			                    android:inputType="text"/>
+			                
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestDiagnostico"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonDiagnostico"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Diagnostico01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDiagnostico01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Diagnostico02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDiagnostico02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestAcamado"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonAcamado"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Acamado01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbAcamado01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Acamado02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbAcamado02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestDomiciliado"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonDomiciliado"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Domiciliado01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDomiciliado01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Domiciliado02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbDomiciliado02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestPlantas"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonPlanta"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="5dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Planta01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPlantas01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Plantas02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPlantas02"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/tv_Plantas"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestPlantasQual"
+					           	android:textSize="17sp" 
+					           	android:enabled="false"/>
+						    
+						    <EditText
+			                    android:id="@+id/ED_Plantas"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:maxLength="9"
+			                    android:inputType="text"
+			                    android:enabled="false"
+			                    android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestPraticas"
+					           	android:textSize="17sp" 
+					           	/>
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonPratica"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Qual01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPratica01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Qual02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbPratica02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					           	android:background="@drawable/borderbottom"
+					          	android:text="@string/QuestSaude"
+					           	android:textSize="17sp" />
+			                
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestQual1"
+					           	android:textSize="17sp" />
+						    
+						    <EditText
+			                    android:id="@+id/ED_Qual1"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:maxLength="9"
+			                    android:inputType="text"/>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestQual2"
+					           	android:textSize="17sp" />
+						    
+						    <EditText
+			                    android:id="@+id/ED_Qual2"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:maxLength="9"
+			                    android:inputType="text"/>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/QuestQual3"
+					           	android:textSize="17sp" />
+						    
+						    <EditText
+			                    android:id="@+id/ED_Qual3"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:maxLength="9"
+			                    android:inputType="text"/>
+			            				                
+			                <!--  --> 
 		                	<TextView
 				            	android:layout_width="match_parent"
 				            	android:layout_height="wrap_content"
@@ -478,15 +2383,16 @@
 			            </LinearLayout>
 			            <!-- FIM das Condições Gerais de Saúde -->
 				    </ScrollView>
-                </LinearLayout>
+                </LinearLayout><!-- FIM DA ABA 3 -->
                 
+                <!-- COMEÇO DA ABA 4 -->
                 <LinearLayout
                     android:id="@+id/tab4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal" >
                     <ScrollView
-                    	android:id="@+id/scroll_Aba4"
+                    	android:id="@+id/scroll_Aba_4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
@@ -505,7 +2411,8 @@
 			                android:paddingBottom="@dimen/GroupMarginVertical"
 			                android:paddingLeft="@dimen/activity_horizontal_margin"
 			                android:paddingRight="@dimen/activity_horizontal_margin"
-			                android:paddingTop="@dimen/GroupMarginVertical" >	    
+			                android:paddingTop="@dimen/GroupMarginVertical" >
+		                		    
 			                <TextView
 						        android:id="@+id/TV_TituloAba4"
 						        android:layout_width="match_parent"
@@ -517,15 +2424,388 @@
 						        android:radius="5dp"
 						        android:text="@string/CidSitRua"
 						        android:textColor="@color/white"
-						        android:textSize="@dimen/FVD_Titulo" />
+						        android:textSize="@dimen/FVD_Titulo" 
+						        android:focusable="true"
+    							android:focusableInTouchMode="true"/>
 			                
-			                <ProgressBar
-		                    	android:id="@+id/PB_aba4"
-		                    	style="?android:attr/progressBarStyleLarge"
-		                    	android:layout_marginBottom="20dp"
-		                    	android:layout_width="match_parent"
-		                    	android:layout_height="match_parent" />
-			                 
+			                <TextView
+			                    android:id="@+id/TV_CidSitRua"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidSituRua"
+					           	android:textSize="17sp" 
+					           	android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonSitRua"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="5dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/SitRua01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbSitRua01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/SitRua02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbSitRua02"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/TV_CidSitRuaQual"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidTempoRua"
+					           	android:textSize="17sp" 
+					           	android:enabled="false"/>
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonTempRua"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="5dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/TempRua01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTempRua01"
+									android:enabled="false"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/TempRua02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTempRua02"
+									android:enabled="false"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/SitRua03"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTempRua03"
+									android:enabled="false"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/SitRua04"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbTempRua04"
+									android:enabled="false"
+									android:focusable="true"
+    								android:focusableInTouchMode="true"/>				
+			            	</RadioGroup>
+
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidBeneficio"
+					           	android:textSize="17sp" />             
+			                			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonCidBene"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Beneficio"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbBene01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Beneficio02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbBene02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidReferencia"
+					           	android:textSize="17sp" />             
+			                			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonCidReferencia"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Referencia"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbReferencia01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Referencia02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbReferencia02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidAlimento"
+					           	android:textSize="17sp" />             
+			                			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonCidAlimenta"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Alimenta01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbAlimenta01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Alimenta02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbAlimenta02"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Alimenta03"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbAlimenta03"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidOrigem"
+					           	android:textSize="17sp" />
+			                
+			                <CheckBox android:id="@+id/CbOri01"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:text="@string/CbAlimento01"/>
+							    
+						    <CheckBox android:id="@+id/CbOri02"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbAlimento02"/>
+						    
+						    <CheckBox android:id="@+id/CbOri03"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbAlimento03"/>
+						    
+						    <CheckBox android:id="@+id/CbOri04"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbAlimento04"/>
+						    
+						    <CheckBox android:id="@+id/CbOri05"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbAlimento05"/>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidInstituicao"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonInstituicao"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Instituicao01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbInstituicao01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Instituicao02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbInstituicao02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/tv_instituicao"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					           	android:background="@drawable/borderbottom"
+					          	android:text="@string/CidInstituicaoQual"
+					           	android:textSize="17sp" 
+					           	android:enabled="false"/>
+			                
+						    
+						    <EditText
+			                    android:id="@+id/ED_Instituicao"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:maxLength="9"
+			                    android:inputType="text"
+			                    android:enabled="false"/>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidVisita"
+					           	android:textSize="17sp" />
+			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonVisita"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Visita01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbVisita01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Visita02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbVisita02"/>				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                    android:id="@+id/tv_visita"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					           	android:background="@drawable/borderbottom"
+					          	android:text="@string/CidVisitaQual"
+					           	android:textSize="17sp" 
+					           	android:enabled="false"/>
+						    
+						    <EditText
+			                    android:id="@+id/ED_Visita"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="wrap_content"
+			                    android:layout_marginBottom="15dp"
+			                    android:maxLength="9"
+			                    android:inputType="text"
+			                    android:enabled="false"/>
+						    
+						    <TextView
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidHigiene"
+					           	android:textSize="17sp" />             
+			                			                
+			                <RadioGroup
+			                    android:id="@+id/RadioButtonCidHigiene"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="wrap_content" 
+			                    android:layout_marginBottom="15dp">
+										
+			            	    <RadioButton  
+									android:id="@+id/Higiene01"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbHigiene01"/>
+			            	    
+			            	    <RadioButton  
+									android:id="@+id/Higiene02"
+									android:layout_width="wrap_content"
+									android:layout_height="wrap_content"
+									android:checked="false"
+									android:text="@string/RbHigiene02"/>
+			            	    				
+			            	</RadioGroup>
+			            	
+			                <TextView
+			                     android:id="@+id/tv_Higiene"
+					           	android:layout_width="match_parent"
+					           	android:layout_height="wrap_content"
+					           	android:layout_marginBottom="5dp"
+					           	android:textStyle="bold"
+					          	android:text="@string/CidHigieneQual"
+					           	android:textSize="17sp" 
+					           	android:enabled="false"/>
+			                
+			                <CheckBox android:id="@+id/Higi01"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:text="@string/CbHigiene01"
+							    android:enabled="false"/>
+							    
+						    <CheckBox android:id="@+id/Higi02"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbHigiene02"
+						        android:enabled="false"/>
+						    
+						    <CheckBox android:id="@+id/Higi03"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbHigiene03"
+						        android:enabled="false"/>
+						    
+						    <CheckBox android:id="@+id/Higi04"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/CbHigiene04"
+						        android:enabled="false"
+						        android:focusable="true"
+    							android:focusableInTouchMode="true"/>
+						    						
+			           		<!--  -->
 		                	<TextView
 				            	android:layout_width="match_parent"
 				            	android:layout_height="wrap_content"
@@ -540,7 +2820,7 @@
 			            </LinearLayout>
 			            <!-- FIM do Cidadão de Rua -->
 				    </ScrollView>
-                </LinearLayout>
+                </LinearLayout><!-- FIM DA ABA 4 -->
             </FrameLayout>
         </LinearLayout>
     </TabHost>

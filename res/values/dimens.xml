@@ -17,5 +17,8 @@
 	<!-- BOTOES -->
 	<dimen name="Btn_Normal">16sp</dimen>
 	<!-- BOTOES -->		
+	
+	<dimen name="activity_horizontal_margin1">5dp</dimen>
+    <dimen name="GroupMarginVertical1">5dp</dimen>
 
 </resources>
